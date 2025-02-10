@@ -43,7 +43,7 @@ export function RecentPostsSection() {
           </div>
 
           {/* Trending Posts Sidebar */}
-          <div className="bg-white dark:bg-purple-100/10 rounded-lg p-6 sticky top-4 self-start h-fit border border-gray-200 dark:border-gray-800">
+          <div className="bg-white dark:bg-purple-100/10 rounded-lg p-6 sticky top-20 self-start h-fit border border-gray-200 dark:border-gray-800">
             <h3 className="font-semibold mb-6 text-foreground dark:text-white">TRENDING POSTS</h3>
             <div className="space-y-6">
               {trendingPosts.map((post) => (

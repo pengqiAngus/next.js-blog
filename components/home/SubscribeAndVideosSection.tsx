@@ -47,7 +47,7 @@ export function SubscribeAndVideosSection() {
           </div>
 
           {/* Popular Videos Sidebar */}
-          <div className="bg-[#f3f3f3] dark:bg-[#ffa9af]/10 rounded-lg p-6 border border-gray-200 dark:border-[#ffa9af] sticky top-4 self-start h-fit">
+          <div className="bg-[#f3f3f3] dark:bg-[#ffa9af]/10 rounded-lg p-6 border border-gray-200 dark:border-[#ffa9af] sticky top-20 self-start h-fit">
             <h3 className="font-semibold mb-6 text-foreground dark:text-white flex items-center gap-2">
               POPULAR VIDEOS <span className="text-rose-500">—</span>
             </h3>

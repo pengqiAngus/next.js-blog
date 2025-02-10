@@ -47,11 +47,9 @@ export default function CategoryPage({ params }: { params: { slug?: string[] } }
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 text-foreground dark:text-white">
       <div className="container mx-auto px-4 py-12">
-        {type !== "all" && (
-          <StyledLinkButton href="/categories" icon={<ChevronLeft className="w-5 h-5" />}>
-            Back to All Categories
+          <StyledLinkButton href="/" icon={<ChevronLeft className="w-5 h-5" />}>
+            Back 
           </StyledLinkButton>
-        )}
 
         <h1 className="text-4xl font-black text-foreground dark:text-white mb-8">{pageTitle}</h1>
 
@@ -67,7 +65,6 @@ export default function CategoryPage({ params }: { params: { slug?: string[] } }
           </CategoryPageButton>
         </div>
 
-        {(type === "blog" || type === "video") && (
           <div className="flex flex-wrap gap-3 mb-12">
             {categories.map((cat) => (
               <CategoryPageButton
@@ -79,7 +76,6 @@ export default function CategoryPage({ params }: { params: { slug?: string[] } }
               </CategoryPageButton>
             ))}
           </div>
-        )}
 
         <div className="grid md:grid-cols-3 gap-6">
           {filteredPosts.map((post) =>
