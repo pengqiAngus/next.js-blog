@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
-import { LanguageSelector } from "@/components/language-selector"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toggle";
+import { LanguageSelector } from "@/components/language-selector";
 
 export function SiteHeader() {
   return (
@@ -16,14 +16,29 @@ export function SiteHeader() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Home
             </Link>
-            <Link href="/categories/blog" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/categories/blog"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Posts
             </Link>
-            <Link href="/categories/video" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/categories/video"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Videos
+            </Link>
+            <Link
+              href="/new-post"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              New Post
             </Link>
             <ModeToggle />
             <LanguageSelector />
@@ -32,6 +47,5 @@ export function SiteHeader() {
       </header>
       <div className="h-16"></div>
     </>
-  )
+  );
 }
-
