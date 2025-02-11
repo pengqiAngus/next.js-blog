@@ -45,11 +45,6 @@ export function BlogCard({
           </Link>
         </div>
         <p className="mt-2 text-muted-foreground line-clamp-2">{description}</p>
-        <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
-          <span>By {author}</span>
-          <span>•</span>
-          <span>{readTime} read</span>
-        </div>
       </div>
     </Card>
   )

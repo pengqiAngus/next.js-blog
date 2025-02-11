@@ -32,22 +32,12 @@ export function VideoCard({ href, image, category, title, likes, comments }: Vid
           >
             {category}
           </Badge>
-          <h3 className="mt-4 text-xl font-bold text-white group-hover:text-purple-400 transition-colors line-clamp-2">
+          <h3 className="mt-4 text-xl font-bold dark:text-white group-hover:text-purple-400 transition-colors line-clamp-2">
             {title}
           </h3>
-          <div className="mt-4 flex items-center gap-4 text-sm text-zinc-400">
-            <div className="flex items-center gap-1">
-              <ThumbsUp className="w-4 h-4" />
-              <span>{likes}</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <MessageSquare className="w-4 h-4" />
-              <span>{comments} comments</span>
-            </div>
-          </div>
         </div>
       </Card>
     </Link>
-  )
+  );
 }
 

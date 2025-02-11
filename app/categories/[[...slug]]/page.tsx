@@ -1,7 +1,7 @@
 "use client"
 
 import { CategoryPageButton } from "@/components/shared/CategoryPageButton"
-import { CategoryBlogCard } from "@/components/shared/CategoryBlogCard"
+import { CategoryCard } from "@/components/shared/CategoryCard";
 import { CategoryVideoCard } from "@/components/shared/CategoryVideoCard"
 import { StyledLinkButton } from "@/components/shared/StyledLinkButton"
 import { ChevronLeft } from "lucide-react"
@@ -47,66 +47,69 @@ export default function CategoryPage({ params }: { params: { slug?: string[] } }
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 text-foreground dark:text-white">
       <div className="container mx-auto px-4 py-12">
-          <StyledLinkButton href="/" icon={<ChevronLeft className="w-5 h-5" />}>
-            Back 
-          </StyledLinkButton>
+        <StyledLinkButton href="/" icon={<ChevronLeft className="w-5 h-5" />}>
+          Back
+        </StyledLinkButton>
 
-        <h1 className="text-4xl font-black text-foreground dark:text-white mb-8">{pageTitle}</h1>
+        <h1 className="text-4xl font-black text-foreground dark:text-white mb-8">
+          {pageTitle}
+        </h1>
 
         <div className="flex flex-wrap gap-3 mb-12">
-          <CategoryPageButton href="/categories/all" active={type === "all" || !type}>
+          <CategoryPageButton
+            href="/categories/all"
+            active={type === "all" || !type}
+          >
             All
           </CategoryPageButton>
           <CategoryPageButton href="/categories/blog" active={type === "blog"}>
             Blog
           </CategoryPageButton>
-          <CategoryPageButton href="/categories/video" active={type === "video"}>
+          <CategoryPageButton
+            href="/categories/video"
+            active={type === "video"}
+          >
             Video
+          </CategoryPageButton>
+          <CategoryPageButton href="/categories/tool" active={type === "tool"}>
+            tool
           </CategoryPageButton>
         </div>
 
-          <div className="flex flex-wrap gap-3 mb-12">
-            {categories.map((cat) => (
-              <CategoryPageButton
-                key={cat.slug}
-                href={`/categories/${type}/${cat.slug}`}
-                active={cat.slug === category || (cat.slug === "all" && category === "all")}
-              >
-                {cat.name}
-              </CategoryPageButton>
-            ))}
-          </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {filteredPosts.map((post) =>
-            post.type === "blog" ? (
-              <CategoryBlogCard
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                image={post.image}
-                category={post.category}
-                title={post.title}
-                description={post.description}
-                author={post.author}
-                readTime={post.readTime}
-              />
-            ) : (
-              <CategoryVideoCard
-                key={post.slug}
-                href={`/videos/${post.slug}`}
-                image={post.image}
-                category={post.category}
-                title={post.title}
-                likes={post.likes}
-                comments={post.comments}
-              />
-            ),
-          )}
+        <div className="flex flex-wrap gap-3 mb-12">
+          {categories.map((cat) => (
+            <CategoryPageButton
+              key={cat.slug}
+              href={`/categories/${type}/${cat.slug}`}
+              active={
+                cat.slug === category ||
+                (cat.slug === "all" && category === "all")
+              }
+            >
+              {cat.name}
+            </CategoryPageButton>
+          ))}
         </div>
 
-        {filteredPosts.length === 0 && <p className="text-center">No posts found in this category.</p>}
+        <div className="grid md:grid-cols-3 gap-6">
+          {filteredPosts.map((post) => (
+            <CategoryCard
+              key={post.slug}
+              href={`/${post.type}/${post.slug}`}
+              image={post.image}
+              category={post.category}
+              title={post.title}
+              likes={post.likes}
+              comments={post.comments}
+            />
+          ))}
+        </div>
+
+        {filteredPosts.length === 0 && (
+          <p className="text-center">No posts found in this category.</p>
+        )}
       </div>
     </div>
-  )
+  );
 }
 

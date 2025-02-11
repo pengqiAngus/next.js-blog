@@ -3,7 +3,7 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
 
-interface CategoryBlogCardProps {
+interface CategoryCardProps {
   href: string
   image: string
   category: string
@@ -13,7 +13,7 @@ interface CategoryBlogCardProps {
   readTime: string
 }
 
-export function CategoryBlogCard({
+export function CategoryCard({
   href,
   image,
   category,
@@ -21,7 +21,7 @@ export function CategoryBlogCard({
   description,
   author,
   readTime,
-}: CategoryBlogCardProps) {
+}: CategoryCardProps) {
   return (
     <Link href={href}>
       <Card className="overflow-hidden group bg-background dark:bg-zinc-900 h-[400px] flex flex-col border border-gray-200 dark:border-zinc-800">
@@ -40,18 +40,15 @@ export function CategoryBlogCard({
           >
             {category}
           </Badge>
-          <h3 className="mt-4 text-xl font-bold text-white group-hover:text-purple-400 transition-colors line-clamp-2 h-[56px]">
+          <h3 className="mt-4 text-xl font-bold dark:text-white group-hover:text-purple-400 transition-colors line-clamp-2 h-[56px]">
             {title}
           </h3>
-          <p className="mt-2 text-muted-foreground line-clamp-3 flex-grow">{description}</p>
-          <div className="mt-4 flex items-center gap-4 text-sm text-zinc-400">
-            <span>By {author}</span>
-            <span>•</span>
-            <span>{readTime} read</span>
-          </div>
+          <p className="mt-2 text-muted-foreground line-clamp-3 flex-grow">
+            {description}
+          </p>
         </div>
       </Card>
     </Link>
-  )
+  );
 }
 

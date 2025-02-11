@@ -11,7 +11,9 @@ export function SubscribeAndVideosSection() {
   return (
     <section className="py-12 bg-background dark:bg-zinc-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-7xl font-black mb-16 text-foreground dark:text-white tracking-tight">SUBSCRIBE</h2>
+        <h2 className="text-7xl font-black mb-16 text-foreground dark:text-white tracking-tight">
+          SUBSCRIBE
+        </h2>
 
         <h3 className="text-2xl font-bold mb-8 text-foreground dark:text-white border-b border-gray-200 dark:border-white/10 pb-2">
           RECENT VIDEOS
@@ -20,15 +22,15 @@ export function SubscribeAndVideosSection() {
         <div className="grid md:grid-cols-[1fr,300px] gap-8">
           <div className="space-y-8">
             <div className="grid gap-8 grid-cols-2">
-              {recentVideoPosts.map((post) => (
+              {recentVideoPosts.map((video) => (
                 <VideoCard
-                  key={post.slug}
-                  href={`/videos/${post.slug}`}
-                  image={post.image}
-                  category={post.category}
-                  title={post.title}
-                  likes={post.likes}
-                  comments={post.comments}
+                  key={video.slug}
+                  href={`/${video.type}/${video.slug}`}
+                  image={video.image}
+                  category={video.category}
+                  title={video.title}
+                  likes={video.likes}
+                  comments={video.comments}
                 />
               ))}
             </div>
@@ -55,7 +57,7 @@ export function SubscribeAndVideosSection() {
               {popularVideos.map((video) => (
                 <PopularVideoCard
                   key={video.slug}
-                  href={`/videos/${video.slug}`}
+                  href={`/${video.type}/${video.slug}`}
                   image={video.image}
                   title={video.title}
                   views={video.views}
@@ -66,6 +68,6 @@ export function SubscribeAndVideosSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

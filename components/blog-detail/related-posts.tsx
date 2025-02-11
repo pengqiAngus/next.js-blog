@@ -18,7 +18,7 @@ interface RelatedPostsProps {
 function RelatedPostCard({ post }: { post: RelatedPost }) {
   return (
     <Link href={`/blog/${post.slug}`}>
-      <Card className="overflow-hidden group bg-zinc-900 border-0">
+      <Card className="overflow-hidden group dark:bg-zinc-900 border-0">
         <div className="relative aspect-[1.5] overflow-hidden">
           <Image
             src={post.image || "/placeholder.svg"}
@@ -28,12 +28,11 @@ function RelatedPostCard({ post }: { post: RelatedPost }) {
           />
         </div>
         <div className="p-4">
-          <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors line-clamp-2 mb-2 h-[3.75rem] flex-shrink-0">
+          <h3 className="text-xl font-bold dark:text-white group-hover:text-purple-400 transition-colors line-clamp-2 mb-2 h-[3.75rem] flex-shrink-0">
             {post.title}
           </h3>
           <div className="flex items-center justify-between text-sm">
             <span className="text-purple-400 font-medium">{post.category}</span>
-            <span className="text-zinc-400">{post.readTime}</span>
           </div>
         </div>
       </Card>
@@ -43,10 +42,10 @@ function RelatedPostCard({ post }: { post: RelatedPost }) {
 
 export function RelatedPosts({ posts }: RelatedPostsProps) {
   return (
-    <section className="py-16 bg-zinc-950">
+    <section className="py-16 dark:bg-zinc-950">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white inline-block relative">
+          <h2 className="text-3xl font-bold dark:text-white inline-block relative">
             RELATED POSTS
             <div className="absolute -bottom-2 left-0 w-1/2 h-1 bg-purple-500" />
           </h2>

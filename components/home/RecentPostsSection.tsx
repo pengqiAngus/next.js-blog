@@ -19,7 +19,7 @@ export function RecentPostsSection() {
             {recentBlogPosts.map((post) => (
               <BlogCard
                 key={post.slug}
-                href={`/blog/${post.slug}`}
+                href={`/${post.type}/${post.slug}`}
                 image={post.image}
                 category={post.category}
                 title={post.title}
@@ -44,12 +44,14 @@ export function RecentPostsSection() {
 
           {/* Trending Posts Sidebar */}
           <div className="bg-white dark:bg-purple-100/10 rounded-lg p-6 sticky top-20 self-start h-fit border border-gray-200 dark:border-gray-800">
-            <h3 className="font-semibold mb-6 text-foreground dark:text-white">TRENDING POSTS</h3>
+            <h3 className="font-semibold mb-6 text-foreground dark:text-white">
+              TRENDING POSTS
+            </h3>
             <div className="space-y-6">
               {trendingPosts.map((post) => (
                 <TrendingPostCard
                   key={post.slug}
-                  href={`/blog/${post.slug}`}
+                  href={`/${post.type}/${post.slug}`}
                   image={post.image}
                   category={post.category}
                   title={post.title}
@@ -61,6 +63,6 @@ export function RecentPostsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

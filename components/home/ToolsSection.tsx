@@ -9,10 +9,12 @@ export function ToolsSection() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-start mb-16">
           <h2 className="text-5xl md:text-7xl font-black text-foreground dark:text-white tracking-tight max-w-3xl leading-tight relative">
-            <span className="relative">A GOOD TOOL IMPROVES THE WAY YOU WORK.</span>
+            <span className="relative">
+              A GOOD TOOL IMPROVES THE WAY YOU WORK.
+            </span>
           </h2>
           <Link
-            href="/tools"
+            href="/categories/tool"
             className="text-foreground dark:text-white hover:text-primary transition-colors flex items-center gap-2"
           >
             See More New Tools
@@ -24,7 +26,7 @@ export function ToolsSection() {
           {featuredTools.map((tool) => (
             <ToolCard
               key={tool.slug}
-              href={`/tools/${tool.slug}`}
+              href={`/${tool.type}/${tool.slug}`}
               image={tool.image}
               category={tool.category}
               title={tool.title}
@@ -35,6 +37,6 @@ export function ToolsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

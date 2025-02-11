@@ -9,7 +9,7 @@ export interface Post {
   likes?: number
   comments?: number
   views?: string
-  type: "blog" | "video"
+  type: "blog" | "video" |"tool"
   popular: boolean
   createdTime: string
 }
@@ -27,6 +27,21 @@ export const posts: Post[] = [
     readTime: "11 min",
     views: "10,544",
     type: "blog",
+    popular: true,
+    createdTime: "2023-06-15T10:00:00Z",
+  },
+  {
+    slug: "smooth-scroll",
+    image:
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+    category: "NEXT JS",
+    title: "How to implement smooth scrolling in Next.js with Lenis and GSAP",
+    description:
+      "Implement smooth scrolling and parallax effects in Next.js using Lenis and GSAP. Dive into detailed tutorials and best practices.",
+    author: "CodeBucks",
+    readTime: "11 min",
+    views: "10,544",
+    type: "tool",
     popular: true,
     createdTime: "2023-06-15T10:00:00Z",
   },
@@ -78,7 +93,8 @@ export const posts: Post[] = [
     image:
       "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "NEXT JS",
-    title: "Next.js Tutorial: Build a Mobile Responsive Portfolio with Tailwind CSS and Framer-motion",
+    title:
+      "Next.js Tutorial: Build a Mobile Responsive Portfolio with Tailwind CSS and Framer-motion",
     likes: 15800,
     comments: 744,
     views: "606.6k",
@@ -91,7 +107,8 @@ export const posts: Post[] = [
     image:
       "https://images.unsplash.com/photo-1621761191319-c6fb62004040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     category: "WEB APP",
-    title: "React Website Tutorial: Build Feature Rich Crypto Screener App with Tailwind CSS",
+    title:
+      "React Website Tutorial: Build Feature Rich Crypto Screener App with Tailwind CSS",
     likes: 735,
     comments: 80,
     type: "video",
@@ -123,5 +140,5 @@ export const posts: Post[] = [
     popular: true,
     createdTime: "2023-05-15T15:10:00Z",
   },
-]
+];
 

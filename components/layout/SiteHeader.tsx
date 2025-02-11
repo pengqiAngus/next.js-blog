@@ -35,10 +35,10 @@ export function SiteHeader() {
               Videos
             </Link>
             <Link
-              href="/new-post"
+              href="/categories/tools"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              New Post
+              Tools
             </Link>
             <ModeToggle />
             <LanguageSelector />

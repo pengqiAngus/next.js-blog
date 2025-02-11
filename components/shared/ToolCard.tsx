@@ -2,7 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
-import { ArrowUpRight } from "lucide-react"
 
 interface ToolCardProps {
   href: string
@@ -30,23 +29,32 @@ export function ToolCard({ href, image, category, title, description, votes }: T
             <Badge
               variant="secondary"
               className={`
-                ${category === "Productivity" && "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300"}
-                ${category === "Code" && "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300"}
-                ${category === "Design" && "bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300"}
+                ${
+                  category === "Productivity" &&
+                  "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-300"
+                }
+                ${
+                  category === "Code" &&
+                  "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300"
+                }
+                ${
+                  category === "Design" &&
+                  "bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300"
+                }
               `}
             >
               {category}
             </Badge>
-            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-              <span>{votes}</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </div>
           </div>
-          <h3 className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">{title}</h3>
-          <p className="mt-2 text-sm text-muted-foreground line-clamp-2">{description}</p>
+          <h3 className="text-xl font-bold dark:text-white group-hover:text-purple-400 transition-colors">
+            {title}
+          </h3>
+          <p className="mt-2 text-sm text-muted-foreground line-clamp-2">
+            {description}
+          </p>
         </div>
       </Card>
     </Link>
-  )
+  );
 }
 

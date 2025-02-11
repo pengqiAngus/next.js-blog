@@ -15,10 +15,9 @@ export function PopularVideoCard({ href, image, title, views }: PopularVideoCard
         <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover rounded-lg" />
       </div>
       <div className="flex-1">
-        <h3 className="font-medium text-sm text-white group-hover:text-purple-400 transition-colors line-clamp-2">
+        <h3 className="font-medium text-sm dark:text-white group-hover:text-purple-400 transition-colors line-clamp-2">
           {title}
         </h3>
-        <p className="text-sm text-muted-foreground mt-1">{views} views</p>
       </div>
     </Link>
   )
