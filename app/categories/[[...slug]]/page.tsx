@@ -1,6 +1,6 @@
 "use client"
 export const runtime = "edge";
-
+export const nodejs = true; 
 import { CategoryPageButton } from "@/components/shared/CategoryPageButton"
 import { CategoryCard } from "@/components/shared/CategoryCard";
 import { CategoryVideoCard } from "@/components/shared/CategoryVideoCard"
