@@ -1,4 +1,6 @@
 "use client"
+export const runtime = "edge";
+
 import { CategoryPageButton } from "@/components/shared/CategoryPageButton"
 import { CategoryCard } from "@/components/shared/CategoryCard";
 import { CategoryVideoCard } from "@/components/shared/CategoryVideoCard"
@@ -10,7 +12,6 @@ import { useRouter, usePathname } from "next/navigation"
 import Link from "next/link"
 import React, { useState } from "react"
 import type { Post } from "@/types/post"
- export const runtime = "edge";
 const categories = [
   { slug: "all", name: "All" },
   { slug: "react-js", name: "React.Js" },
