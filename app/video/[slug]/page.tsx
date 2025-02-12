@@ -2,6 +2,7 @@ import { BlogHeader } from "@/components/blog-detail/blog-header"
 import { BlogContent } from "@/components/blog-detail/blog-content"
 import { CategoriesSidebar } from "@/components/blog-detail/categories-sidebar"
 import { RelatedPosts } from "@/components/blog-detail/related-posts"
+export const runtime = "edge";
 
 const relatedPosts = [
   {
