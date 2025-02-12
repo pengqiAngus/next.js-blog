@@ -1,5 +1,5 @@
 export const runtime = "edge";
-
+export const nodejs = true; 
 import { BlogHeader } from "@/components/blog-detail/blog-header";
 import { BlogContent } from "@/components/blog-detail/blog-content";
 import { CategoriesSidebar } from "@/components/blog-detail/categories-sidebar";
