@@ -1,9 +1,2 @@
-main = ".open-next/worker.js"
-name = "next.js-blog"
-compatibility_date = "2025-01-18"
-compatibility_flags = ["nodejs_compat"]
-assets = { directory = ".open-next/assets", binding = "ASSETS" }
-
-[[kv_namespaces]]
-binding = "NEXT_CACHE_WORKERS_KV"
-id = "angus"
+compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2024-09-23"
