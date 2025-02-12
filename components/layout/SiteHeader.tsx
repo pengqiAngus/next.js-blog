@@ -29,12 +29,6 @@ export function SiteHeader() {
               Posts
             </Link>
             <Link
-              href="/categories/video"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Videos
-            </Link>
-            <Link
               href="/categories/tools"
               className="text-sm font-medium hover:text-primary transition-colors"
             >

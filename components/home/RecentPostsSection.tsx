@@ -6,8 +6,8 @@ import { posts } from "@/data/posts"
 import { filterPopularPosts, getRecentPosts } from "@/utils/postFilters"
 
 export function RecentPostsSection() {
-  const recentBlogPosts = getRecentPosts(posts, "blog")
-  const trendingPosts = filterPopularPosts(posts, "blog")
+  const recentBlogPosts = getRecentPosts(posts,)
+  const trendingPosts = filterPopularPosts(posts)
   return (
     <section className="py-12 bg-[#f3f3f3] dark:bg-zinc-900">
       <div className="container mx-auto px-4">
@@ -19,9 +19,9 @@ export function RecentPostsSection() {
             {recentBlogPosts.map((post) => (
               <BlogCard
                 key={post.slug}
-                href={`/${post.type}/${post.slug}`}
+                href={`/blog/${post.slug}`}
                 image={post.image}
-                category={post.category}
+                category={post.type}
                 title={post.title}
                 description={post.description}
                 author={post.author}
@@ -51,11 +51,10 @@ export function RecentPostsSection() {
               {trendingPosts.map((post) => (
                 <TrendingPostCard
                   key={post.slug}
-                  href={`/${post.type}/${post.slug}`}
+                  href={`/blog/${post.slug}`}
                   image={post.image}
-                  category={post.category}
+                  category={post.type}
                   title={post.title}
-                  views={post.views}
                 />
               ))}
             </div>

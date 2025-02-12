@@ -29,5 +29,4 @@ export const featuredTools = [
       "Transform Your Ideas into Professional Designs with Canva! Canva is a powerful tool that helps you to create professional designs with the help of thousands of professional templa...",
     votes: 116,
   },
-]
-
+];

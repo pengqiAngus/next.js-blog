@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { ToolCard } from "@/components/shared/ToolCard"
-import { featuredTools } from "@/data/tools"
+import { featuredTools } from "@/data/tools/index"
 
 export function ToolsSection() {
   return (

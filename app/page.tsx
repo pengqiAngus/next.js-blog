@@ -3,7 +3,6 @@ import { HeroSection } from "@/components/home/HeroSection"
 import { ContentSection } from "@/components/home/ContentSection"
 import { CategoriesSection } from "@/components/home/CategoriesSection"
 import { RecentPostsSection } from "@/components/home/RecentPostsSection"
-import { SubscribeAndVideosSection } from "@/components/home/SubscribeAndVideosSection"
 import { ToolsSection } from "@/components/home/ToolsSection"
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
         <ContentSection />
         <CategoriesSection />
         <RecentPostsSection />
-        <SubscribeAndVideosSection />
         <ToolsSection />
       </main>
     </div>
