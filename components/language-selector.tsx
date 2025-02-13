@@ -2,16 +2,14 @@
 
 import * as React from "react"
 import { Globe } from "lucide-react"
-
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-
+import translateAI from "@/utils/translateAI";
 export function LanguageSelector() {
   const [language, setLanguage] = React.useState("en")
 
   const changeLanguage = (lang: string) => {
-    setLanguage(lang)
-    // 在这里添加语言切换的逻辑，例如更新全局状态或调用 API
+    translateAI()
   }
 
   return (
