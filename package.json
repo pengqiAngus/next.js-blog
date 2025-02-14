@@ -53,6 +53,7 @@
     "next": "14.2.16",
     "next-i18next": "^15.4.1",
     "next-themes": "latest",
+    "openai": "^4.85.0",
     "react": "^18",
     "react-day-picker": "8.10.1",
     "react-dom": "^18",
