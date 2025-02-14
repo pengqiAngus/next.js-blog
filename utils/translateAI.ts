@@ -1,4 +1,3 @@
-import { translateAI } from '@/utils/translateAI';
 export default async () => {
      const textNodes = [];
      const walk = document.createTreeWalker(
@@ -28,7 +27,7 @@ export default async () => {
      }
 
      // Translate in batches to avoid overwhelming the API
-     const batchSize = 5;
+     const batchSize = 50;
      for (let i = 0; i < textNodes.length; i += batchSize) {
        const batch = textNodes.slice(i, i + batchSize);
        await Promise.all(
