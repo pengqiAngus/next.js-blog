@@ -37,7 +37,7 @@ const processProprietaryTerms = async (
           content = content.replace(
             regex,
             `<span class="proprietary-term" style="position:relative;color: #2563eb; cursor: pointer; text-decoration: underline;" >${term}
-                <span data-term="${term}" onclick="window.${handlerName}('${term}')" class="proprietary-term-tooltip" style="position: absolute; right: -70px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 4px; padding: 4px 10px; background-color: rgba(255, 255, 255, 0.95); border: 1px solid #e5e7eb; border-radius: 9999px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); font-size: 12px; color: #4b5563; transition: all 0.2s ease; opacity: 0; pointer-events: none;" onmouseover="this.style.backgroundColor='white'; this.style.color='#1f2937';" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.95)'; this.style.color='#4b5563';">
+                <span data-term="${term}" onclick="window.${handlerName}('${term}')" class="proprietary-term-tooltip" style="position: absolute; z-index:99 ;right: -70px; top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 4px; padding: 4px 10px; background-color: rgba(255, 255, 255, 0.95); border: 1px solid #e5e7eb; border-radius: 9999px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); font-size: 12px; color: #4b5563; transition: all 0.2s ease; opacity: 0; pointer-events: none;" onmouseover="this.style.backgroundColor='white'; this.style.color='#1f2937';" onmouseout="this.style.backgroundColor='rgba(255, 255, 255, 0.95)'; this.style.color='#4b5563';">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #3b82f6">
                     <circle cx="12" cy="12" r="10"/>
                     <line x1="12" y1="16" x2="12" y2="12"/>
@@ -80,6 +80,7 @@ const processProprietaryTerms = async (
         const shouldSkip =
           node.nodeName === "SCRIPT" ||
           node.nodeName === "STYLE" ||
+          node.nodeName === "CODE" ||
           (node as Element).classList?.contains("proprietary-term");
 
         if (!shouldSkip) {
