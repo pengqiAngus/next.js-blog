@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/mode-toggle";
 import { LanguageSelector } from "@/components/language-selector";
-
+import { ToolDropMenu } from "@/components/toolsDropMenu";
 export function SiteHeader() {
   return (
     <>
@@ -28,12 +27,7 @@ export function SiteHeader() {
             >
               Posts
             </Link>
-            <Link
-              href="/categories/tools"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Tools
-            </Link>
+            <ToolDropMenu />
             <ModeToggle />
             <LanguageSelector />
           </nav>

@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge"
-import { Facebook, Twitter, Linkedin, Share2, Eye } from "lucide-react"
 import Link from "next/link"
 
 interface BlogHeaderProps {
@@ -12,7 +11,7 @@ interface BlogHeaderProps {
 
 export function BlogHeader({ title, author, date, categories,type }: BlogHeaderProps) {
   return (
-    <div className="relative w-full dark:bg-black py-20">
+    <div className="relative w-full dark:bg-black pt-20">
       <div className="container mx-auto px-4">
         <div className="mb-4 flex items-center gap-2">
           {categories.map((category) => (
