@@ -1,0 +1,23 @@
+{
+  "common": {
+    "home": "Home",
+    "blog": "Blog",
+    "categories": "Categories",
+    "about": "About",
+    "search": "Search",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "switchLanguage": "Change Language"
+  },
+  "home": {
+    "title": "Welcome to My Blog",
+    "subtitle": "A place to share thoughts and ideas",
+    "recentPosts": "Recent Posts",
+    "readMore": "Read More"
+  },
+  "blog": {
+    "allPosts": "All Posts",
+    "readTime": "{{time}} min read",
+    "publishedOn": "Published on"
+  }
+} 

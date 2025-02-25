@@ -1,12 +1,19 @@
 // import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider";
-import  RecoilContextProvider  from "@/components/recoilProvider";
+import RecoilContextProvider from "@/components/recoilProvider";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { I18nProvider } from "@/components/I18nProvider";
 import "./globals.css";
 
+// 不在服务器组件中导入客户端i18n
+// import '@/utils/i18n/i18n';
+
 // const inter = Inter({ subsets: ["latin"] })
+
+// 默认语言
+const defaultLocale = 'zh';
 
 export default function RootLayout({
   children,
@@ -14,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={` bg-background text-foreground`}>
+    <html lang={defaultLocale} suppressHydrationWarning>
+      <head>
+        {/* 确保所有CSS样式正确加载 */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className="bg-background text-foreground">
         <RecoilContextProvider>
           <ThemeProvider
             attribute="class"
@@ -23,12 +34,14 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex min-h-screen flex-col">
-              <ScrollToTop />
-              <SiteHeader />
-              <main className="flex-1">{children}</main>
-              <SiteFooter />
-            </div>
+            <I18nProvider>
+              <div className="flex min-h-screen flex-col">
+                <ScrollToTop />
+                <SiteHeader />
+                <main className="flex-1">{children}</main>
+                <SiteFooter />
+              </div>
+            </I18nProvider>
           </ThemeProvider>
         </RecoilContextProvider>
       </body>
