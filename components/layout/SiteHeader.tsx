@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ModeToggle } from "@/components/mode-toggle";
-import { LanguageSelector } from "@/components/language-selector";
-import { ToolDropMenu } from "@/components/toolsDropMenu";
+import { ModeToggle } from "@/components/common/mode-toggle";
+import { LanguageSelector } from "@/components/common/language-selector";
+import { ToolDropMenu } from "@/components/common/toolsDropMenu";
 export function SiteHeader() {
   return (
     <>

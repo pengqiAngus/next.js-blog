@@ -13,13 +13,13 @@ export function ToolsSection() {
               A GOOD TOOL IMPROVES THE WAY YOU WORK.
             </span>
           </h2>
-          <Link
+          {/* <Link
             href="/categories/tool"
             className="text-foreground dark:text-white hover:text-primary transition-colors flex items-center gap-2"
           >
             See More New Tools
             <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -33,8 +33,6 @@ const relatedPosts = [
 ];
 
 export default function BlogPost({ params }: { params: { slug: string } }) {
-  console.log(111, params);
-
   return (
     <article className="min-h-screen bg-background dark:bg-zinc-950">
       <BlogHeader

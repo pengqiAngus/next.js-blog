@@ -32,7 +32,7 @@ export function RecentPostsSection() {
             <div className="py-4">
               <div className="container mx-auto px-4 text-right">
                 <Link
-                  href="/categories/blog"
+                  href="/categories/blog/all"
                   className="inline-flex items-center gap-2 text-foreground dark:text-white font-semibold hover:text-primary transition-colors"
                 >
                   See More New Articles

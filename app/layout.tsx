@@ -1,9 +1,9 @@
 // import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider";
-import  RecoilContextProvider  from "@/components/recoilProvider";
+import { ThemeProvider } from "@/components/common/theme-provider";
+import  RecoilContextProvider  from "@/components/common/recoilProvider";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { ScrollToTop } from "@/components/ScrollToTop";
+import { ScrollToTop } from "@/components/common/ScrollToTop";
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] })
