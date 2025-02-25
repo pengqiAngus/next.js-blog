@@ -5,10 +5,9 @@ import { StyledLinkButton } from "@/components/shared/StyledLinkButton";
 import { blogTypes } from "@/data/types/index";
 
 import { ChevronLeft } from "lucide-react";
-import { posts } from "@/data/posts";
+import  posts  from "@/data/posts";
 import { filterPostsBySubCategory } from "@/utils/postFilters";
 import React, { useState } from "react";
-import type { Post } from "@/types/post";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 

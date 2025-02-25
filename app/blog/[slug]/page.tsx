@@ -4,7 +4,7 @@ import { BlogHeader } from "@/components/blog-detail/blog-header";
 import { BlogContent } from "@/components/blog-detail/blog-content";
 import { CategoriesSidebar } from "@/components/blog-detail/categories-sidebar";
 import { RelatedPosts } from "@/components/blog-detail/related-posts";
-import content from "@/data/posts/detail";
+import posts from "@/data/posts/index";
 const relatedPosts = [
   {
     slug: "user-location",
@@ -32,7 +32,10 @@ const relatedPosts = [
   },
 ];
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+
+
+export default function BlogPost({ params:{slug} }: { params: { slug: string } }) {
+    const post = posts.find(post=>post.slug===slug)
   return (
     <article className="min-h-screen bg-background dark:bg-zinc-950">
       <BlogHeader
@@ -45,7 +48,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,300px] gap-8">
-          <BlogContent content={content} />
+          <BlogContent content={post?.content!} />
           <div className="lg:sticky lg:top-20 lg:self-start">
             <CategoriesSidebar />
           </div>

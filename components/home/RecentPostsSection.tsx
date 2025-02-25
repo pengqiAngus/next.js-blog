@@ -2,7 +2,7 @@ import Link from "next/link"
 import { BlogCard } from "@/components/shared/BlogCard"
 import { TrendingPostCard } from "@/components/shared/TrendingPostCard"
 import { ArrowUpRight } from "lucide-react"
-import { posts } from "@/data/posts"
+import  posts  from "@/data/posts"
 import { filterPopularPosts, getRecentPosts } from "@/utils/postFilters"
 
 export function RecentPostsSection() {
