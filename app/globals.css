@@ -71,5 +71,20 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* 确保所有语言使用相同的基本样式 */
+  html[lang] {
+    @apply font-sans;
+  }
+  
+  /* 中文特定样式 */
+  html[lang="zh"] {
+    @apply font-sans;
+  }
+  
+  /* 英文特定样式 */
+  html[lang="en"] {
+    @apply font-sans;
+  }
 }
 

@@ -1,0 +1,23 @@
+{
+  "common": {
+    "home": "首页",
+    "blog": "博客",
+    "categories": "分类",
+    "about": "关于",
+    "search": "搜索",
+    "darkMode": "深色模式",
+    "lightMode": "浅色模式",
+    "switchLanguage": "切换语言"
+  },
+  "home": {
+    "title": "欢迎来到我的博客",
+    "subtitle": "分享思想和创意的地方",
+    "recentPosts": "最近文章",
+    "readMore": "阅读更多"
+  },
+  "blog": {
+    "allPosts": "所有文章",
+    "readTime": "阅读时间 {{time}} 分钟",
+    "publishedOn": "发布于"
+  }
+} 
