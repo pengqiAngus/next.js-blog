@@ -9,8 +9,6 @@ interface CategoryCardProps {
   category: string
   title: string
   description: string
-  author: string
-  readTime: string
 }
 
 export function CategoryCard({
@@ -19,8 +17,6 @@ export function CategoryCard({
   category,
   title,
   description,
-  author,
-  readTime,
 }: CategoryCardProps) {
   return (
     <Link href={href}>

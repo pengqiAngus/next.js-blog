@@ -3,7 +3,7 @@ export interface Post {
   image: string;
   type: "react" | "ui" | "user-experience" | "productivity" | "ai";
   title: string;
-  description?: string;
+  description: string;
   popular: boolean;
   createdTime: string;
     content: string;

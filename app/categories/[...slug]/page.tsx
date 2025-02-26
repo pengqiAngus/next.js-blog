@@ -4,7 +4,7 @@ import { CategoryCard } from "@/components/shared/CategoryCard";
 import { StyledLinkButton } from "@/components/shared/StyledLinkButton";
 import { blogTypes } from "@/data/types/index";
 import { ChevronLeft } from "lucide-react";
-import  posts  from "@/data/posts";
+import  posts ,{type Post} from "@/data/posts";
 import { filterPostsBySubCategory } from "@/utils/postFilters";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -16,7 +16,7 @@ export default function CategoryPage({
   params: { slug?: string[] };
 }) {
   const [type = "all"] = params.slug || [];
-  const postsByType =
+  const postsByType: Post[] =
     type === "all" ? posts.slice(0, 9) : filterPostsBySubCategory(posts, type);
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 text-foreground dark:text-white">
@@ -43,13 +43,14 @@ export default function CategoryPage({
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {postsByType.map((post) => (
+          {postsByType.map((post: Post) => (
             <CategoryCard
               key={post.slug}
               href={`/blog/${post.slug}`}
               image={post.image}
               category={post.type}
-              title={post.title}
+                  title={post.title}
+                  description={post.description!}
             />
           ))}
         </div>

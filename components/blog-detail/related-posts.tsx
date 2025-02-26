@@ -2,20 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
 import { ArrowUpRight } from "lucide-react"
+import { type Post } from "@/data/posts/index";
 
-interface RelatedPost {
-  slug: string
-  title: string
-  category: string
-  readTime: string
-  image: string
-}
-
-interface RelatedPostsProps {
-  posts: RelatedPost[]
-}
-
-function RelatedPostCard({ post }: { post: RelatedPost }) {
+function RelatedPostCard({ post }: { post: Post }) {
   return (
     <Link href={`/blog/${post.slug}`}>
       <Card className="overflow-hidden group dark:bg-zinc-900 border-0">
@@ -32,15 +21,15 @@ function RelatedPostCard({ post }: { post: RelatedPost }) {
             {post.title}
           </h3>
           <div className="flex items-center justify-between text-sm">
-            <span className="text-purple-400 font-medium">{post.category}</span>
+            <span className="text-purple-400 font-medium">{post.type}</span>
           </div>
         </div>
       </Card>
     </Link>
-  )
+  );
 }
 
-export function RelatedPosts({ posts }: RelatedPostsProps) {
+export function RelatedPosts({ posts }: {posts:Post[]}) {
   return (
     <section className="py-16 dark:bg-zinc-950">
       <div className="container mx-auto px-4">
@@ -69,6 +58,6 @@ export function RelatedPosts({ posts }: RelatedPostsProps) {
         </Link>
       </div>
     </section>
-  )
+  );
 }
 

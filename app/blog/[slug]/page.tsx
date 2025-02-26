@@ -1,15 +1,10 @@
 export const runtime = "edge";
 export const nodejs = true; 
 import { BlogHeader } from "@/components/blog-detail/blog-header";
-import { BlogContent } from "@/components/blog-detail/blog-content";
 import { CategoriesSidebar } from "@/components/blog-detail/categories-sidebar";
 import { RelatedPosts } from "@/components/blog-detail/related-posts";
 import posts,{type Post} from "@/data/posts/index";
 import { filterPostsByCreateTime } from "@/utils/postFilters";
-
-
-
-
 export default function BlogPost({ params:{slug} }: { params: { slug: string } }) {
     const post: Post = posts.find((post) => post.slug === slug)!;
   return (
@@ -24,7 +19,7 @@ export default function BlogPost({ params:{slug} }: { params: { slug: string } }
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,300px] gap-8">
-          <BlogContent content={post?.content!} />
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />
           <div className="lg:sticky lg:top-20 lg:self-start">
             <CategoriesSidebar />
           </div>
