@@ -26,7 +26,7 @@ export function ToolsSection() {
           {featuredTools.map((tool) => (
             <ToolCard
               key={tool.slug}
-              href={`/${tool.type}/${tool.slug}`}
+              href={tool.slug}
               image={tool.image}
               category={tool.category}
               title={tool.title}

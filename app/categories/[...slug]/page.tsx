@@ -3,7 +3,6 @@ export const nodejs = true;
 import { CategoryCard } from "@/components/shared/CategoryCard";
 import { StyledLinkButton } from "@/components/shared/StyledLinkButton";
 import { blogTypes } from "@/data/types/index";
-
 import { ChevronLeft } from "lucide-react";
 import  posts  from "@/data/posts";
 import { filterPostsBySubCategory } from "@/utils/postFilters";
@@ -47,7 +46,7 @@ export default function CategoryPage({
           {postsByType.map((post) => (
             <CategoryCard
               key={post.slug}
-              href={`/${post.type}/${post.slug}`}
+              href={`/blog/${post.slug}`}
               image={post.image}
               category={post.type}
               title={post.title}

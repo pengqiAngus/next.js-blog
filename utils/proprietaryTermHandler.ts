@@ -23,6 +23,50 @@ const processProprietaryTerms = async (
       handleTermClick(term);
     };
 
+    // 处理代码块，确保它们有背景色
+    const processCodeBlocks = () => {
+      // 查找所有代码块
+      const codeBlocks = tempDiv.querySelectorAll('.highlight, .js-code-highlight');
+      codeBlocks.forEach(block => {
+        const pre = block.querySelector('pre');
+        if (pre) {
+          // 确保 pre 元素有背景色
+          pre.style.backgroundColor = '#f8f8f8';
+          pre.style.borderRadius = '0.5rem';
+          pre.style.padding = '1rem';
+          pre.style.overflow = 'auto';
+          pre.style.border = '1px solid #e0e0e0';
+          
+          // 为代码添加样式
+          const code = pre.querySelector('code');
+          if (code) {
+            code.style.fontFamily = 'Consolas, Monaco, Courier New, monospace';
+            code.style.letterSpacing = '0.05em';
+            code.style.lineHeight = '1.6';
+            code.style.display = 'block';
+          }
+        }
+      });
+
+      // 查找特定的数字标记后的代码块
+      const paragraphs = tempDiv.querySelectorAll('p');
+      paragraphs.forEach(p => {
+        if (p.textContent && (p.textContent.includes('1️⃣') || p.textContent.includes('2️⃣') || p.textContent.includes('3️⃣'))) {
+          const nextDiv = p.nextElementSibling;
+          if (nextDiv && nextDiv.classList.contains('highlight')) {
+            const pre = nextDiv.querySelector('pre');
+            if (pre) {
+              pre.style.backgroundColor = '#f8f8f8';
+              pre.style.borderRadius = '0.5rem';
+              pre.style.padding = '1rem';
+              pre.style.overflow = 'auto';
+              pre.style.border = '1px solid #e0e0e0';
+            }
+          }
+        }
+      });
+    };
+
     const processTextNode = (textNode: Text) => {
       let content = textNode.textContent;
       let hasChanges = false;
@@ -94,6 +138,10 @@ const processProprietaryTerms = async (
     };
 
     processNode(tempDiv);
+    
+    // 在处理完所有文本后，处理代码块
+    processCodeBlocks();
+    
     return tempDiv.innerHTML;
   } catch (error) {
     console.error("Error processing content:", error);

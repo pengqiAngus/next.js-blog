@@ -1,15 +1,142 @@
 import { Post } from "./index";
 const aiPosts: Post[] = [
   {
-  slug: "non-human-identity-security-in-the-age-of-ai-5dh5",
-  image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftyfbz1qoojksqanq24kh.png",
-  type: "ai", // 根据标签 #ai 确定
-  title: "Non-Human Identity Security in the Age of AI",
-  description: "Exploring the security challenges and risks of non-human identities (NHIs) in an AI-driven enterprise environment.",
-  popular: false, // 未明确标示为热门，假设为 false
-  createdTime: "2025-02-24T18:29:46Z",
-  author: "Dwayne McDaniel",
-  content: `
+    slug: "top-10-generative-ai-blogs-articles-or-tutorials-in-2024",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fucta3lwkzx91blw2mkb0.jpg",
+    type: "ai",
+    title: "Top 10 generative AI blogs, articles, or tutorials in 2024",
+    description:
+      "Discover the most popular content for 2024's hottest topic: generative AI, from innovative tutorials to comprehensive articles.",
+    popular: true,
+    createdTime: "2025-02-25",
+    author: "Michelle Corbin",
+    content: `
+    <div class="prose max-w-none text-gray-900 dark:text-gray-100">
+      <p class="font-bold mb-6">Discover the most popular content for 2024's hottest topic: generative AI</p>
+
+      <p class="mb-6">Generative AI is revolutionizing the way we build, create, and innovate. With advancements in large language models (LLMs), AI agents, and open-source platforms, there's never been a better time to dive deep into this transformative field.</p>
+
+      <p class="mb-8">Whether you're a developer eager to build AI applications, a data scientist exploring new forecasting methods, or an enthusiast looking to dive into the world of LLMs, we've curated a list of the top 10 blogs, articles, and tutorials to help you stay ahead of the curve and inspire your next AI project. Explore the best content that will shape your generative AI journey this year!</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        1. Contributing knowledge to the open source Granite model using InstructLab
+      </h2>
+
+      <p class="mb-6">Just edging out our #2 tutorial for 2024 is this tutorial, <a href="https://developer.ibm.com/tutorials/awb-contributing-knowledge-instructlab-granite/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Contributing knowledge to the open source Granite model using InstructLab</a>, where you learn learn how to contribute knowledge to open source large language models (LLMs) on your personal laptop or Mac device using the InstructLab environment. After completing this tutorial, you will have gained the necessary skills and knowledge to become a valuable contributor to the InstructLab community and the broader generative AI ecosystem.</p>
+
+      <p class="mb-6">Our #5 tutorial, <a href="https://developer.ibm.com/tutorials/awb-contributing-llm-granite-instructlab-ui/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Contributing knowledge to open-source LLMs like the Granite models using the InstructLab UI,</a> built on the skills learned in this fundamental InstructLab tutorial for 2024.</p>
+
+      <p class="mb-8">Explore <a href="https://developer.ibm.com/components/instructlab/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about InstructLab.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        2. Build a local AI co-pilot using IBM Granite Code, Ollama, and Continue
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-local-ai-copilot-ibm-granite-code-ollama-continue/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Build a local AI co-pilot using IBM Granite Code, Ollama</a>, and Continue, you learn how to set up a local AI co-pilot in Visual Studio Code using IBM Granite Code, Ollama, and Continue, overcoming common enterprise challenges such as data privacy, licensing, and cost. The setup includes open-source LLMs, Ollama for model serving, and Continue for in-editor AI assistance. Get your geek on try building a local AI co-pilot of your own using local LLMs.</p>
+
+      <p class="mb-6">This tutorial was the prerequisite tutorial for our #10 tutorial, <a href="https://developer.ibm.com/tutorials/awb-developing-gen-ai-app-ibm-granite-code/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Developing a gen AI application using IBM Granite Code</a>.</p>
+
+      <p class="mb-8">Explore <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about the Granite models. And, explore <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        3. Using the IBM Granite models for time series forecasting
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-foundation-model-time-series-forecasting/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Using the IBM Granite models for time series forecasting</a>, you learn how to use the Granite TinyTimeMixer (TTM) model, a compact time-series foundation model, to perform zero-shot prediction and fine-tuned forecasting on an air pollution data set. You learn about the benefits of using foundation models for time series forecasting tasks, highlighting their ability to handle varied dataset resolutions with minimal model capacity.</p>
+
+      <p class="mb-8">Explore <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about the Granite models. And, explore <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        4. Build a RAG application with watsonx.ai flows engine
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-build-rag-application-watsonx-ai-flows-engine/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Build a RAG application with watsonx.ai flows engine</a>, you learn how to enhance your applications with generative AI by building a question-answer application using JavaScript and <a href="https://www.ibm.com/products/watsonx-ai/flows-engine" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">IBM watsonx.ai flows engine</a>.</p>
+
+      <p class="mb-6">Using the watsonx.ai flows engine CLI and SDK, you can more readily integrate generative AI into your own applications.</p>
+
+      <p class="mb-8">Explore this <a href="https://developer.ibm.com/series/use-various-models-with-watsonx-flows-engine/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">tutorial series on IBM Developer</a> about using watsonx.ai flows engine.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        5. Contributing knowledge to open-source LLMs like the Granite models using the InstructLab UI
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-contributing-llm-granite-instructlab-ui/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Contributing knowledge to open-source LLMs like the Granite models using the InstructLab UI</a>, you learn how to contribute to open-source large language models (LLMs), such as the IBM Granite models, using <a href="https://instructlab.ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">InstructLab UI</a>. InstructLab is a community-based approach to building truly open-source LLMs.</p>
+
+      <p class="mb-6">Learn more about <a href="https://developer.ibm.com/articles/awb-instructlab-why-developers-need-it/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">what InstructLab is and why developers need it in this article on IBM Developer</a>.</p>
+
+      <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/instructlab/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about InstructLab.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        6. Create a LangChain AI agent in Python using watsonx
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-create-langchain-ai-agent-python-watsonx/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Create a LangChain AI agent in Python using watsonx</a>, you learn how to create an AI agent using LangChain in Python with watsonx. You'll create a tool to return today's date and another tool to return today's Astronomy Picture of the Day using NASA's open source API.</p>
+
+      <p class="mb-6">Python, an open-source programming language, seems to be the most popular programming language for generative AI.</p>
+
+      <p class="mb-8">Explore <a href="https://developer.ibm.com/languages/python/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about Python.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        7. Leveraging CrewAI and IBM watsonx
+      </h2>
+
+      <p class="mb-6">In this blog, <a href="https://developer.ibm.com/blogs/awb-leveraging-crewai-and-ibm-watsonx/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Leveraging CrewAI and IBM watsonx</a>, you are introduced to CrewAI that you use to orchestrate AI agents and how to combine CrewAI with watsonx, which is IBM's portfolio of AI products that helps accelerate the impact of generative AI.</p>
+
+      <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/watsonx/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about <a href="https://www.ibm.com/products" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx</a>.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        8. Build a RAG agent to answer complex questions
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-build-rag-llm-agents/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Build a RAG agent to answer complex questions</a>, you learn how to build a RAG-based LLM agent (AI agent) to handle complex questions and interact with external information sources such as vector databases and the internet. In this tutorial, you are introduced to a sample RAG agent (with diagrams and full Python implementation), and see how an example question is answered correctly by the sample RAG agent and incorrectly by ChatGPT 4o.</p>
+
+      <p class="mb-6">Learn more about what <a href="https://www.ibm.com/think/topics/ai-agents" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">AI agents</a> are in this article. Read more about <a href="https://research.ibm.com/blog/what-are-ai-agents-llm" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">AI agents based on LLMs (LLM agents)</a> in this blog.</p>
+
+      <p class="mb-8">Explore more <a href="https://developer.ibm.com/technologies/rag/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about retrieval-augmented generation (RAG).</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        9. Generating SQL from text with LLMs
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-text-to-sql-using-llms/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Generating SQL from text with LLMs</a>, you learn how to use a large language model (LLM) from the IBM Granite models to create valid SQL statements from normal descriptions of data operations using natural language processing (NLP). The goal is to convert text input into a structured representation and use that structured data to generate a semantically correct SQL query that can be executed on a database.</p>
+
+      <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        10. Developing a gen AI application using IBM Granite Code
+      </h2>
+
+      <p class="mb-6">In this tutorial, <a href="https://developer.ibm.com/tutorials/awb-developing-gen-ai-app-ibm-granite-code/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Developing a gen AI application using IBM Granite Code</a>, you learn how to use the IBM Granite Code model as a code assistant to build a get AI application using Python and Flask. Discover the benefits of running Granite Code locally, the power of using all open source code, and just how much you can boost your productivity with Granite Code as your code assistant.</p>
+
+      <p class="mb-6">Try the Granite models for yourself by prompting them in the <a href="https://www.ibm.com/granite/playground/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Granite Playground</a>.</p>
+
+      <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about the Granite models.</p>
+
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+        Want more?
+      </h2>
+
+      <p class="mb-6">In 2024, learning about generative AI meant learning about large language models (LLMs) like the open-sourced Granite models, the open-source project InstructLab that you use to bulid open-source LLMs, and AI agents that use RAG, LangChain, Python, or watsonx.ai technologies. Stay tuned to see what 2025 brings for generative AI.</p>
+
+      <p class="mb-6">Check out this <a href="https://developers.redhat.com/articles/2024/12/17/our-top-ai-articles-2024" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Red Hat</a> blog about their top 10 articles in AI.</p>
+
+      <p class="mb-6">Check out more of our <a href="https://developer.ibm.com/get-started/generative-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">generative AI content</a> on our Build with generative AI page.</p>
+    </div>
+  `,
+  },
+  {
+    slug: "non-human-identity-security-in-the-age-of-ai-5dh5",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftyfbz1qoojksqanq24kh.png",
+    type: "ai", // 根据标签 #ai 确定
+    title: "Non-Human Identity Security in the Age of AI",
+    description:
+      "Exploring the security challenges and risks of non-human identities (NHIs) in an AI-driven enterprise environment.",
+    popular: false, // 未明确标示为热门，假设为 false
+    createdTime: "2025-02-24",
+    author: "Dwayne McDaniel",
+    content: `
     <div class="prose max-w-none text-gray-900 dark:text-gray-100">
       <p>It is not a coincidence that non-human identities (NHIs) have come into focus recently while AI-powered tools and autonomous agents are rapidly being adopted. In fact, this is partially what is driving the explosion of NHIs in the enterprise. This has sparked a lot of <a href="https://www.cyberark.com/resources/blog/why-machine-identities-are-essential-strands-in-your-zero-trust-strategy?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">research and conversations</a> about <a href="https://blog.gitguardian.com/identities-do-not-exist-in-a-vacuum/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">machine identity and governance</a>.</p>
 
@@ -121,9 +248,295 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
 
       <p>There are no guarantees about what AI agents will ultimately deliver, but it is clear it is going to happen at a very accelerated pace. The complexity we are introducing now to deploy self-guiding AI agents to interact with other systems and agents brings with it a number of perils and a lot of promise for working more efficiently. We are here to help you navigate forward securely as you add more NHIs faster than ever. From automated secrets scanning to giving you insights into what your NHIs can access and with which privileges, GitGuardian is helping enterprises manage and secure non-human identities at scale.</p>
 
-      <p>As AI adoption grows, securing machine identities is no longer optional—it’s essential. We would <a href="https://www.gitguardian.com/book-a-demo?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">love to talk about securing the AI-driven future of your organization</a>.</p>
+      <p>As AI adoption grows, securing machine identities is no longer optional—it's essential. We would <a href="https://www.gitguardian.com/book-a-demo?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">love to talk about securing the AI-driven future of your organization</a>.</p>
     </div>
-  `
-}
+  `,
+  },
+  {
+    slug: "aifacialemotion-a-net-library-for-facial-emotion-analysis-4pe",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc6kysmfs3ruh1wqojld3.png",
+    type: "ai",
+    title: "😃 AI.Facial.Emotion – A .NET Library for Facial Emotion Analysis",
+    description:
+      "一个轻量级且强大的.NET库，能够实时分析人脸情绪、年龄和性别，适用于聊天机器人、客户分析、安全系统或医疗应用等多种场景。",
+    popular: false,
+    createdTime: "2025-02-25",
+    author: "Duc Nguyen Thanh",
+    content: `
+    <div class="prose max-w-none text-gray-900 dark:text-gray-100">
+      <p>Ever wondered how AI can detect emotions from faces? 🤖💡</p>
+
+      <p>Meet <strong>AI.Facial.Emotion</strong> – a lightweight and powerful .NET library that can analyze facial emotions, age, and gender in real-time. Whether you're building chatbots, customer analytics, security systems, or healthcare apps, this tool makes it easy to integrate AI-powered facial analysis into your projects.</p>
+
+
+      <hr>
+
+      <h2>
+        <a name="what-can-it-do" href="#what-can-it-do">
+        </a>
+        🎯 What Can It Do?
+      </h2>
+
+      <p>✅ Detect Emotions – Identify happiness, sadness, anger, surprise, and more.<br>
+      ✅ Estimate Age – Predict an approximate age range.<br>
+      ✅ Classify Gender – Recognize male or female faces.<br>
+      ✅ Optimized for .NET – Works with .NET 6, 7, 8, and 9.<br>
+      ✅ Multiple Input Formats – Accepts image URLs, Base64 strings, and file streams.</p>
+
+      <hr>
+      <h2>
+        <a name="why-use-it" href="#why-use-it">
+        </a>
+        🚀 Why Use It?
+      </h2>
+
+      <p>✅ Fast &amp; Efficient – AI models optimized for real-time processing.<br>
+      ✅ Easy Integration – Works seamlessly with ASP.NET Web API.<br>
+      ✅ Privacy First – No external API calls, all processing happens locally.</p>
+
+      <hr>
+      <h2>
+        <a name="installation-super-easy" href="#installation-super-easy">
+        </a>
+        📦 Installation (Super Easy!)
+      </h2>
+
+      <p>Just install it via NuGet:<br>
+      </p>
+
+      <div class="highlight js-code-highlight">
+      <pre class="highlight plaintext"><code>dotnet add package AI.Facial.Emotion
+
+      </code></pre>
+      </div>
+
+
+
+      <p>Make sure your .NET Web API project is running <strong>.NET 6</strong> or higher.<br>
+      </p>
+
+      <div class="highlight js-code-highlight">
+      <pre class="highlight plaintext"><code>using AI.Facial.Emotion;
+
+      var builder = WebApplication.CreateBuilder(args);
+      builder.Services.AddSingleton&lt;EmotionAnalyzer&gt;();
+
+      var app = builder.Build();
+      app.MapControllers();
+      app.Run();
+      </code></pre>
+      </div>
+
+
+
+
+      <hr>
+
+      <h2>
+        <a name="quick-start" href="#quick-start">
+        </a>
+        ⚡ Quick Start
+      </h2>
+
+      <p>1️⃣ Detect Emotion from an Image URL<br>
+      </p>
+
+      <div class="highlight js-code-highlight">
+      <pre class="highlight plaintext"><code>var analyzer = new EmotionAnalyzer();
+      var result = await analyzer.AnalyzeEmotionFromUrlAsync("https://example.com/image.jpg");
+
+      Console.WriteLine($"Emotion: {result.Emotion}");
+      </code></pre>
+      </div>
+
+
+
+      <p>2️⃣ Detect Emotion from a Base64 Image<br>
+      </p>
+
+      <div class="highlight js-code-highlight">
+      <pre class="highlight plaintext"><code>var base64Image = "iVBORw0KGgoAAAANSUhEUgAA...";
+      var result = await analyzer.AnalyzeEmotionFromBase64Async(base64Image);
+
+      Console.WriteLine($"Emotion: {result.Emotion}");
+      </code></pre>
+      </div>
+
+
+
+      <p>3️⃣ Detect Emotion from a File Stream<br>
+      </p>
+
+      <div class="highlight js-code-highlight">
+      <pre class="highlight plaintext"><code>using var fileStream = File.OpenRead("image.jpg");
+      var result = await analyzer.AnalyzeEmotionFromStreamAsync(fileStream);
+
+      Console.WriteLine($"Emotion: {result.Emotion}");
+      </code></pre>
+      </div>
+
+
+
+
+      <hr>
+
+      <h2>
+        <a name="that-is-some-results" href="#that-is-some-results">
+        </a>
+        ⚡That is some results
+      </h2>
+
+      <p><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxmo9tg6zdn907fhdjrd2.png" alt="Anger" loading="lazy" width="563" height="209"></p>
+
+      <p><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdprx7n3sc0cydcz4qvui.png" alt="Surprise" loading="lazy" width="563" height="209"></p>
+
+      <p><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyqr1kpoiu6zwm66d77xx.png" alt="Happiness" loading="lazy" width="563" height="209"></p>
+    </div>
+  `,
+  },
+  {
+    slug: "google-geminis-ai-coding-tool-is-now-free-for-everyone-47fg",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9fum0ftsdfecp47zbtps.jpg",
+    type: "ai",
+    title: "Google Gemini’s AI Coding Tool is Now Free for Everyone",
+    description:
+      "75% of developers use AI daily, and 25% of Google’s new code is AI-generated. AI is making coding faster and easier for everyone.",
+    popular: true, // Assuming popularity based on context (1 like visible)
+    createdTime: "2025-02-26",
+    author: "artificialintelligenceee",
+    content: `
+    <div class="prose prose-lg max-w-none text-gray-800 dark:text-gray-200 tracking-wide">
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI is Changing Coding Forever</h2>
+      <p class="leading-relaxed mb-6">75% of developers use AI daily, and 25% of Google’s new code is AI-generated. AI is making coding faster and easier for everyone.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI Tools Were Too Expensive—Until Now</h2>
+      <p class="leading-relaxed mb-6">Tools like ChatGPT Pro cost $200/month, but Google’s new Gemini Code Assist is free for all developers.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">What is Gemini Code Assist?</h2>
+      <p class="leading-relaxed mb-6">Gemini Code Assist is a free AI coding tool that supports all programming languages and gives 180,000 code completions monthly.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Gemini Code Assist: 90x Better Than Others</h2>
+      <p class="leading-relaxed mb-6">With 180,000 code completions per month, Gemini Code Assist beats other free tools by a huge margin.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI-Powered Code Reviews for Free</h2>
+      <p class="leading-relaxed mb-6">Gemini Code Assist for GitHub offers free AI code reviews, saving time and improving code quality.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">How to Use Gemini Code Assist</h2>
+      <p class="leading-relaxed mb-6">Gemini Code Assist works in Visual Studio Code, JetBrains IDEs, and GitHub, so you never need to leave your IDE.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Write Code Faster with AI</h2>
+      <p class="leading-relaxed mb-6">Gemini Code Assist helps you write, explain, and refine code using plain English prompts—no switching tools needed.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Improve Large Codebases Easily</h2>
+      <p class="leading-relaxed mb-6">With 128,000 input tokens, Gemini Code Assist can analyze and improve big projects quickly and efficiently.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Custom Code Reviews for Teams</h2>
+      <p class="leading-relaxed mb-6">Teams can enforce coding standards with AI-powered reviews, ensuring consistency across projects.</p>
+
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Get Started with Gemini Code Assist Today</h2>
+      <p class="leading-relaxed mb-6">Install Gemini Code Assist in Visual Studio Code, JetBrains IDEs, or GitHub for free and start coding smarter.</p>
+
+      <p class="leading-relaxed mb-6">
+        Read Next: 
+        <a href="https://artificialintelligenceee.com/web-stories/7-reasons-chatgpt-is-better-than-google-for-search/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">
+          7 Reasons ChatGPT is Better Than Google for Search
+        </a>
+      </p>
+    </div>
+  `,
+  },
+  {
+    slug: "how-developers-are-using-kaibanjs-20-real-world-ai-use-cases-5hni",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F10132%2F092732dc-dcf9-4c10-b260-b0f1005304d2.png",
+    type: "ai",
+    title: "How Developers Are Using KaibanJS: 20+ Real-World AI Use Cases",
+    description:
+      "Explore over 20 innovative real-world use cases of KaibanJS, a multi-agent AI framework transforming industries from healthcare to software development.",
+    popular: true,
+    createdTime: "2025-02-25",
+    author: "Dariel Vila",
+    content: `
+      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-gray-100 tracking-wide leading-relaxed">
+        <p class="mb-6">KaibanJS is redefining how developers build multi-agent AI systems. Whether automating workflows, optimizing data pipelines, or enhancing research processes, developers worldwide are using KaibanJS in innovative ways. With over <strong class="font-bold">120,000 agentic team runs</strong> and <strong class="font-bold">1,000 GitHub stars</strong>, it is clear that the open-source community is embracing KaibanJS for practical, real-world applications.</p>
+
+        <p class="mb-6">This article explores <strong class="font-bold">20+ use cases</strong> where multi-agent AI is transforming industries, from healthcare to SaaS development.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🚀 Why Multi-Agent AI Matters</h2>
+        <p class="mb-6">Traditional AI applications often rely on <strong class="font-bold">monolithic models</strong> handling entire tasks. KaibanJS introduces a <strong class="font-bold">multi-agent approach</strong>, where specialized agents collaborate dynamically to complete complex workflows efficiently. This modular structure improves adaptability, scalability, and <strong class="font-bold">human-in-the-loop</strong> validation.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🏥 Healthcare and Insurance</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">1. Automating Insurance Authorization</h3>
+        <p class="mb-6">A KaibanJS-based workflow automates insurance authorization by deploying agents for <strong class="font-bold">coverage verification, claim eligibility assessment, and exception handling</strong>. This approach significantly reduces manual processing time while ensuring compliance with industry regulations.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">2. AI-Powered Medical Research Assistants</h3>
+        <p class="mb-6">Biotech researchers leverage KaibanJS agents to <strong class="font-bold">clean datasets, generate simulations, and analyze experimental results</strong>. This setup accelerates the R&D process by automating repetitive tasks, allowing scientists to focus on high-impact research.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">📊 Data and Analytics</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">3. Real-Time Data Streaming</h3>
+        <p class="mb-6">Developers use KaibanJS to orchestrate <strong class="font-bold">data pipelines that stream real-time information</strong> from sources like DynamoDB into Pinecone, enabling <strong class="font-bold">semantic search and AI-driven insights</strong>.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">4. Google Analytics for Ad Optimization</h3>
+        <p class="mb-6">A marketing team employs KaibanJS agents to <strong class="font-bold">analyze web traffic patterns and generate optimized ad campaigns</strong>. This automated approach improves <strong class="font-bold">decision-making</strong> and reduces the manual effort required for campaign iteration.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">5. Web Scraping for Market Intelligence</h3>
+        <p class="mb-6">A community-built KaibanJS scraper extracts structured data from complex websites, supporting <strong class="font-bold">news aggregation, competitive analysis, and business intelligence</strong> applications.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">📈 Productivity and Office Automation</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">6. AI-Powered Office Plugins</h3>
+        <p class="mb-6">A developer integrated KaibanJS into <strong class="font-bold">Microsoft Word and Excel</strong> to automate document summarization, text formatting, and structured report generation, enhancing workplace productivity.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">7. AI Personal Assistant for Task Management</h3>
+        <p class="mb-6">A personal AI assistant built with KaibanJS automates <strong class="font-bold">email triage, calendar scheduling, and workflow prioritization</strong>, freeing up valuable time for deep work.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🏢 Enterprise AI Applications</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">8. Secure On-Prem LLM for Enterprise Automation</h3>
+        <p class="mb-6">For companies with strict data privacy policies, KaibanJS facilitates <strong class="font-bold">local AI deployments</strong>, ensuring secure <strong class="font-bold">code refactoring, documentation generation, and automated development workflows</strong>.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">9. Human-in-the-Loop Document Generation</h3>
+        <p class="mb-6">Consulting firms use KaibanJS to <strong class="font-bold">automate report creation while incorporating human review checkpoints</strong>, ensuring high-quality deliverables with expert oversight.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">10. Sales Process Automation</h3>
+        <p class="mb-6">Sales teams deploy KaibanJS agents to <strong class="font-bold">categorize emails, generate CRM updates, and prepare customer briefings</strong>, reducing administrative overhead.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🛠️ Software Development</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">11. End-to-End SaaS Development</h3>
+        <p class="mb-6">A groundbreaking implementation utilizes KaibanJS to <strong class="font-bold">generate entire SaaS applications</strong>, employing specialized agents for <strong class="font-bold">frontend, backend, database design, and testing</strong>.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">12. Optimizing Long-Running Scripts</h3>
+        <p class="mb-6">Developers have transformed <strong class="font-bold">monolithic automation scripts</strong> into modular <strong class="font-bold">multi-agent workflows</strong>, enhancing performance, fault tolerance, and maintainability.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🔄 AI Workflow Management & Integration</h2>
+        <h3 class="text-xl font-semibold mt-6 mb-2">13. Webhook-Based Automation</h3>
+        <p class="mb-6">KaibanJS powers <strong class="font-bold">event-driven automation</strong> by responding to webhook triggers from CRM systems, e-commerce platforms, and cloud services.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">14. AI-Powered Chatbot Interfaces</h3>
+        <p class="mb-6">Users interact with KaibanJS agents via <strong class="font-bold">Slack, Teams, and WhatsApp</strong>, triggering complex automation workflows using natural language.</p>
+
+        <h3 class="text-xl font-semibold mt-6 mb-2">15. Visual Workflow Management with Kaiban Board</h3>
+        <p class="mb-6">KaibanJS provides a <strong class="font-bold">kanban-style interface</strong> for AI workflow management, allowing developers to monitor, adjust, and optimize multi-agent processes visually.</p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🔥 The KaibanJS Advantage</h2>
+        <p class="mb-6">These real-world implementations highlight why KaibanJS is becoming a go-to framework for AI orchestration:</p>
+        <p class="mb-6">
+          ✅ <strong class="font-bold">Role-Based Agents</strong> – Each agent specializes in a specific task, improving efficiency.<br><br>
+          ✅ <strong class="font-bold">Modular Task Management</strong> – Workflows remain scalable and adaptable.<br><br>
+          ✅ <strong class="font-bold">Observability</strong> – Developers can track every state change and action.<br><br>
+          ✅ <strong class="font-bold">Seamless Human-AI Collaboration</strong> – Integrating <strong class="font-bold">human-in-the-loop</strong> validation ensures quality control.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-8 mb-4">🔗 Get Started with KaibanJS</h2>
+        <p class="mb-6">KaibanJS is open-source and ready for experimentation. Join our community, contribute, and explore the potential of <strong class="font-bold">multi-agent AI</strong>.</p>
+        <p class="mb-6">
+          🌐 Website: <a href="https://www.kaibanjs.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">https://www.kaibanjs.com/</a><br><br>
+          💻 GitHub Repository: <a href="https://github.com/kaiban-ai/KaibanJS" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">https://github.com/kaiban-ai/KaibanJS</a><br><br>
+          🤝 Discord Community: <a href="https://kaibanjs.com/discord" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">https://kaibanjs.com/discord</a>
+        </p>
+        <p class="mb-6">What will you build with KaibanJS?</p>
+      </div>
+    `,
+  },
 ];
 export default aiPosts;
