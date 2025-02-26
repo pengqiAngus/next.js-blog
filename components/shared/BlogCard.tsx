@@ -26,8 +26,14 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <Card className="overflow-hidden group h-64 flex gap-x-3 p-6 bg-background dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
-      <div className="relative w-[400px]">
-        <Image src={image || "/placeholder.svg"} alt={title} fill className="w-full rounded-lg" />
+      <div className="relative w-[30%]  justify-items-center hidden  lg:flex">
+        <Image
+          src={image || "/placeholder.svg"}
+          alt={title}
+          width={400}
+          height={100}
+          className="object-cover rounded-lg"
+        />
       </div>
       <div className="">
         <div className="flex  gap-y-2 flex-col">
@@ -47,6 +53,6 @@ export function BlogCard({
         <p className="mt-2 text-muted-foreground line-clamp-2">{description}</p>
       </div>
     </Card>
-  )
+  );
 }
 
