@@ -15,24 +15,24 @@ if (!i18n.isInitialized) {
     .init({
       resources: {
         en: {
-          translation: enTranslation
+          translation: enTranslation,
         },
         zh: {
-          translation: zhTranslation
-        }
+          translation: zhTranslation,
+        },
       },
-      lng: 'zh', // 默认语言
-      fallbackLng: 'en',
+      lng: "en", // 默认语言
+      fallbackLng: "zn",
       interpolation: {
-        escapeValue: false
+        escapeValue: false,
       },
       detection: {
-        order: ['localStorage', 'navigator'],
-        caches: ['localStorage']
+        order: ["localStorage", "navigator"],
+        caches: ["localStorage"],
       },
       react: {
-        useSuspense: false
-      }
+        useSuspense: false,
+      },
     });
 }
 
