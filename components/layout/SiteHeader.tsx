@@ -29,7 +29,7 @@ export function SiteHeader() {
             </Link>
             <ToolDropMenu />
             <ModeToggle />
-            <LanguageSelector />
+            {/* <LanguageSelector /> */}
           </nav>
         </div>
       </header>
