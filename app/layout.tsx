@@ -13,7 +13,7 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] })
 
 // 默认语言
-const defaultLocale = 'zh';
+const defaultLocale = 'en';
 
 export default function RootLayout({
   children,

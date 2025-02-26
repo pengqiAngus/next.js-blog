@@ -11,9 +11,9 @@ export function ContentSection() {
           {/* Main Content */}
           <div className="space-y-8">
             <Card className="border border-gray-200 dark:border-gray-800">
-              <Link href="/blog/smooth-scroll">
+              <Link href="/blog/adaptive-ui-in-react-constructing-self-configuring-and-context-aware-components-1e7n">
                 <Image
-                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsstlqmn41ro9i6tksp9j.png"
                   alt="Blog post about smooth scrolling"
                   width={800}
                   height={400}
@@ -21,11 +21,13 @@ export function ContentSection() {
                 />
                 <CardContent className="pt-4">
                   <h2 className="text-xl font-semibold mb-2">
-                    How To Implement Smooth Scrolling In Next.js With Lenis And GSAP
+                    Adaptive UI in React: Constructing Self-Configuring and
+                    Context-Aware Components
                   </h2>
                   <p className="text-muted-foreground">
-                    Learn how to create smooth scrolling and parallax effects in your Next.js applications using Lenis
-                    and GSAP libraries.
+                    Learn how to build adaptive, self-configuring React
+                    components that respond to user behavior, device
+                    constraints, and context for an enhanced user experience.
                   </p>
                 </CardContent>
               </Link>
@@ -41,22 +43,27 @@ export function ContentSection() {
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                    alt="Patterns.dev illustration"
+                    src="https://plus.excalidraw.com/twitter_card.png?v1"
+                    alt="Excalidraw"
                     width={300}
                     height={200}
                     className="rounded-lg"
                   />
                   <div>
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm text-green-500">Productivity</span>
-                      <span className="text-sm text-muted-foreground">194 votes</span>
+                      <span className="text-sm text-green-500">
+                        Productivity
+                      </span>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Patterns.dev</h3>
+                    <h3 className="text-lg font-semibold mb-2">Excalidraw</h3>
                     <p className="text-sm text-muted-foreground mb-4">
-                      A collection of design patterns and component patterns for building powerful web apps.
+                      Excalidraw is a virtual collaborative whiteboard tool that
+                      lets you easily sketch diagrams that have a hand-drawn
+                      feel to them
                     </p>
-                    <Button className="w-full">Find Out More</Button>
+                    <Link href="/tool/excalidraw" className="w-full">
+                      <Button className="w-full">Find Out More</Button>
+                    </Link>
                   </div>
                 </div>
               </CardContent>
@@ -65,6 +72,6 @@ export function ContentSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

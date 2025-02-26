@@ -12,7 +12,7 @@ if (!i18n.isInitialized) {
   i18n
     .use(LanguageDetector) // 添加语言检测
     .use(initReactI18next)
-    .init({
+    .init<typeof enTranslation>({
       resources: {
         en: {
           translation: enTranslation,
@@ -22,18 +22,21 @@ if (!i18n.isInitialized) {
         },
       },
       lng: "en", // 默认语言
-      fallbackLng: "zn",
+      fallbackLng: "zh",
       interpolation: {
         escapeValue: false,
       },
       detection: {
-        order: ["localStorage", "navigator"],
+        order: ["querystring", "localStorage", "navigator", "htmlTag"],
         caches: ["localStorage"],
+        lookupLocalStorage: "i18nextLng",
       },
+      // 确保在初始化时将默认语言保存到localStorage
+      // 删除init属性，因为它不是i18next InitOptions的有效配置项
       react: {
         useSuspense: false,
       },
     });
 }
 
-export default i18n; 
+export default i18n;

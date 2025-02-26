@@ -17,7 +17,7 @@ export function BlogHeader({ title, author, date, categories,type }: BlogHeaderP
           {categories.map((category) => (
             <Link
               key={category}
-              href={`/categories/${type}/${category
+              href={`/categories/${category
                 .toLowerCase()
                 .replace("#", "")}`}
             >

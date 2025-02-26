@@ -14,7 +14,7 @@
                    href={href}
                    className={cn(
                      "inline-block px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-                     "bg-purple-500/20 text-purple-300 hover:bg-purple-500/30",
+                     "bg-purple-700 text-white hover:bg-purple-500/30",
                      active && "bg-purple-500 text-white hover:bg-purple-600",
                    )}
                  >

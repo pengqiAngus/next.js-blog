@@ -259,7 +259,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
     type: "ai",
     title: "😃 AI.Facial.Emotion – A .NET Library for Facial Emotion Analysis",
     description:
-      "一个轻量级且强大的.NET库，能够实时分析人脸情绪、年龄和性别，适用于聊天机器人、客户分析、安全系统或医疗应用等多种场景。",
+      "A lightweight and powerful .NET library that can analyze facial emotions, age, and gender in real-time, suitable for various scenarios such as chatbots, customer analytics, security systems, or healthcare applications.",
     popular: false,
     createdTime: "2025-02-25",
     author: "Duc Nguyen Thanh",
