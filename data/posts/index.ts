@@ -1,13 +1,14 @@
 export interface Post {
   slug: string;
+  originalURL: string;
   image: string;
   type: "react" | "ui" | "user-experience" | "productivity" | "ai";
   title: string;
   description: string;
   popular: boolean;
   createdTime: string;
-    content: string;
-    author:string
+  content: string;
+  author: string;
 }
 
 import reactPost from "./react";

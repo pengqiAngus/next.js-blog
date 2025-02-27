@@ -22,7 +22,7 @@ export function SiteHeader() {
               Home
             </Link>
             <Link
-              href="/categories/blog"
+              href="/categories/all"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
               Posts

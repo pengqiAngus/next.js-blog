@@ -2,6 +2,8 @@ import { Post } from "./index";
 const reactPosts: Post[] = [
   {
     slug: "adaptive-ui-in-react-constructing-self-configuring-and-context-aware-components-1e7n",
+    originalURL:
+      "https://dev.to/raajaryan/adaptive-ui-in-react-constructing-self-configuring-and-context-aware-components-1e7n",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsstlqmn41ro9i6tksp9j.png",
     type: "react",
@@ -180,6 +182,8 @@ export default App;</code></pre>
   },
   {
     slug: "nextjs-can-we-make-an-intercepting-route-behave-like-isr-3e35",
+    originalURL:
+      "https://dev.to/mariahello/nextjs-can-we-make-an-intercepting-route-behave-like-isr-3e35",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh71gdxju441ph52aevjf.png",
     type: "react",
@@ -298,6 +302,8 @@ export default App;</code></pre>
   },
   {
     slug: "using-emotion-in-a-new-project-component-inheritance-vs-single-styled-component-with-props-2o1l",
+    originalURL:
+      "https://dev.to/mariahello/using-emotion-in-a-new-project-component-inheritance-vs-single-styled-component-with-props-2o1l",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3da5pmwrzy4ocofgxv7j.png",
     type: "react",
@@ -491,17 +497,22 @@ const StyledInputContainer = styled.div<{ variant: "default" | "error" }>\`
         <p class="mb-6">Thank you!</p>
       </div>
     `,
-    },
+  },
   {
-  slug: "why-zustand-state-reset-works-instantly-but-react-query-cache-clearing-can-be-tricky",
-  image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fojqu2h3w8rtl3cl3lsdx.png",
-  type: "react",
-  title: "Why Zustand State Reset Works Instantly, But React Query Cache Clearing Can Be Tricky",
-  description: "Exploring the differences between Zustand state management and React Query cache clearing in React applications",
-  popular: true,
-  createdTime: "2025-02-25",
-  author: "Maria Kim",
-  content: `
+    slug: "why-zustand-state-reset-works-instantly-but-react-query-cache-clearing-can-be-tricky",
+    originalURL:
+      "https://dev.to/mariahello/why-zustand-state-reset-works-instantly-but-react-query-cache-clearing-can-be-tricky-1jf",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fojqu2h3w8rtl3cl3lsdx.png",
+    type: "react",
+    title:
+      "Why Zustand State Reset Works Instantly, But React Query Cache Clearing Can Be Tricky",
+    description:
+      "Exploring the differences between Zustand state management and React Query cache clearing in React applications",
+    popular: true,
+    createdTime: "2025-02-25",
+    author: "Maria Kim",
+    content: `
     <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-gray-100">
       <img src="https://media2.dev.to/dynamic/image/width=800,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffgljpl2y4j29z7y2x4ku.png" alt="react img" class="w-full rounded-lg" />
 
@@ -620,17 +631,22 @@ Promise.resolve().then(() => queryClient.clear());
         Happy coding! 🚀
       </p>
     </div>
-  `
-},{
-  slug: "optimizing-react-native-for-enterprise-the-definitive-guide",
-  image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1eunpg0fu0meoh02klv8.png",
-  type: "react",
-  title: "Optimizing React Native for Enterprise: The Definitive Guide",
-  description: "Strategies and best practices for optimizing enterprise-scale React Native applications",
-  popular: true,
-  createdTime: "2025-02-25",
-  author: "Sankalan Dasgupta",
-  content: `
+  `,
+  },
+  {
+    slug: "optimizing-react-native-for-enterprise-the-definitive-guide",
+    originalURL:
+      "https://dev.to/sankalan47/optimizing-react-native-for-enterprise-the-definitive-guide-o37",
+    image:
+      "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1eunpg0fu0meoh02klv8.png",
+    type: "react",
+    title: "Optimizing React Native for Enterprise: The Definitive Guide",
+    description:
+      "Strategies and best practices for optimizing enterprise-scale React Native applications",
+    popular: true,
+    createdTime: "2025-02-25",
+    author: "Sankalan Dasgupta",
+    content: `
     <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-gray-100">
       <p class="leading-relaxed text-gray-700 dark:text-gray-300">
         React Native has established itself as a powerful framework for building cross-platform mobile applications, allowing organizations to maintain a single codebase while targeting multiple platforms. However, as enterprise applications grow in complexity, performance optimization becomes critical for user experience and business success.
@@ -767,7 +783,7 @@ const ProductImage = ({ uri, priority = 'normal' }) => {
         Optimization is an never ending process that should be guided by data. Establish performance baselines, continuously monitor real-world metrics, and focus your efforts where they'll have the greatest impact on user experience.
       </p>
     </div>
-  `
-}
+  `,
+  },
 ];
 export default reactPosts;

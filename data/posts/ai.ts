@@ -2,6 +2,8 @@ import { Post } from "./index";
 const aiPosts: Post[] = [
   {
     slug: "top-10-generative-ai-blogs-articles-or-tutorials-in-2024",
+    originalURL:
+      "https://dev.to/ibmdeveloper/top-10-generative-ai-blogs-articles-or-tutorials-in-2024-4d1j",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fucta3lwkzx91blw2mkb0.jpg",
     type: "ai",
@@ -127,6 +129,8 @@ const aiPosts: Post[] = [
   },
   {
     slug: "non-human-identity-security-in-the-age-of-ai-5dh5",
+    originalURL:
+      "https://dev.to/gitguardian/non-human-identity-security-in-the-age-of-ai-5dh5",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftyfbz1qoojksqanq24kh.png",
     type: "ai", // 根据标签 #ai 确定
@@ -254,6 +258,8 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
   },
   {
     slug: "aifacialemotion-a-net-library-for-facial-emotion-analysis-4pe",
+    originalURL:
+      "https://dev.to/ngtduc693/aifacialemotion-a-net-library-for-facial-emotion-analysis-4pe",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc6kysmfs3ruh1wqojld3.png",
     type: "ai",
@@ -397,6 +403,8 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
   },
   {
     slug: "google-geminis-ai-coding-tool-is-now-free-for-everyone-47fg",
+    originalURL:
+      "https://www.androidheadlines.com/2025/02/google-free-gemini-ai-coding-tool.html",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9fum0ftsdfecp47zbtps.jpg",
     type: "ai",
@@ -449,6 +457,8 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
   },
   {
     slug: "how-developers-are-using-kaibanjs-20-real-world-ai-use-cases-5hni",
+    originalURL:
+      "https://dev.to/kaibanjs/how-developers-are-using-kaibanjs-20-real-world-ai-use-cases-5hni",
     image:
       "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F10132%2F092732dc-dcf9-4c10-b260-b0f1005304d2.png",
     type: "ai",
