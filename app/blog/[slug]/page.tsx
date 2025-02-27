@@ -13,7 +13,8 @@ export default function BlogPost({ params:{slug} }: { params: { slug: string } }
     const post: Post = posts.find((post) => post.slug === slug)!;
   return (
     <article className="min-h-screen bg-background dark:bg-zinc-950">
-      <BlogHeader {...post}
+      <BlogHeader
+       {...post}
       />
 
       <div className="container mx-auto px-4 py-12">
@@ -22,7 +23,7 @@ export default function BlogPost({ params:{slug} }: { params: { slug: string } }
             <Alert className="mb-6">
               <Info className="h-4 w-4" />
               <AlertDescription>
-                Select any text to get AI explanation
+                选中任意文字，即可获取AI解释说明
               </AlertDescription>
             </Alert>
             <TextExplainer>

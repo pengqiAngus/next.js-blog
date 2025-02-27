@@ -24,6 +24,8 @@ export default function RootLayout({
     <html lang={defaultLocale} suppressHydrationWarning>
       <head>
         {/* 确保所有CSS样式正确加载 */}
+        {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js" /> */}
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="bg-background text-foreground">
