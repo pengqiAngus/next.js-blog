@@ -3,7 +3,7 @@ import { ThemeProvider } from "@/components/common/theme-provider";
 import  RecoilContextProvider  from "@/components/common/recoilProvider";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { I18nProvider } from "@/components/I18nProvider";
+import { I18nProvider } from "@/components/common/I18nProvider";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
 import "./globals.css";
 
