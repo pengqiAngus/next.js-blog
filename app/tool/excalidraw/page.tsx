@@ -7,7 +7,6 @@ import dynamic from "next/dynamic";
 import { useRecoilValue } from "recoil";
 import { themeState } from "@/utils/recoil";
 
-
 const Excalidraw = dynamic(
   async () => (await import("@excalidraw/excalidraw")).Excalidraw,
   {
@@ -15,7 +14,7 @@ const Excalidraw = dynamic(
   },
 )
 export default function ExcalidrawPage() {
-  const themeStateText = useRecoilValue(themeState || 'light');
+  const themeStateText = useRecoilValue(themeState) || 'light';
   return (
     <div>
       <div className="min-h-screen bg-background">

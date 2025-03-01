@@ -2,28 +2,17 @@ import Link from "next/link"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
+import { type Post } from "@/data/posts/index";
 
-interface BlogCardProps {
-  href: string
-  image: string
-  category: string
-  title: string
-  description: string
-  author: string
-  readTime: string
-  className?: string
-}
 
 export function BlogCard({
-  href,
+  slug,
   image,
-  category,
+  type,
   title,
   description,
   author,
-  readTime,
-  className = "",
-}: BlogCardProps) {
+}: Post) {
   return (
     <Card className="overflow-hidden group h-64 flex gap-x-3 p-6 bg-background dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800">
       <div className="relative w-[30%]  justify-items-center hidden  lg:flex">
@@ -41,11 +30,11 @@ export function BlogCard({
             variant="secondary"
             className="bg-purple-100 w-fit text-purple-700 dark:bg-purple-900 dark:text-purple-300 rounded-[2px]"
           >
-            {category}
+            {type}
           </Badge>
           <Link
-            href={href}
-            className={`text-2xl font-bold tracking-tight text-foreground dark:text-white group-hover:text-primary transition-colors ${className}`}
+            href={slug}
+            className={`text-2xl font-bold tracking-tight text-foreground dark:text-white group-hover:text-primary transition-colors `}
           >
             {title}
           </Link>
