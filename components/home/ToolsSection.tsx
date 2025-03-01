@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
 import { ArrowUpRight } from "lucide-react"
-import { ToolCard } from "@/components/shared/ToolCard"
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { featuredTools } from "@/data/tools/index"
 
 export function ToolsSection() {
@@ -24,15 +28,49 @@ export function ToolsSection() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {featuredTools.map((tool) => (
-            <ToolCard
-              key={tool.slug}
-              href={tool.slug}
-              image={tool.image}
-              category={tool.category}
-              title={tool.title}
-              description={tool.description}
-              votes={tool.votes}
-            />
+            <CardContainer key={tool.slug} className="inter-var">
+              <CardBody className="bg-white dark:bg-zinc-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-purple-500/[0.1] border-gray-200 dark:border-gray-800 w-auto h-auto rounded-xl p-6 border">
+                <CardItem
+                  translateZ="100"
+                  rotateZ={-10}
+                  className="w-full"
+                >
+                  <Image
+                    src={tool.image || "/placeholder.svg"}
+                    alt={tool.title}
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover group-hover/card:shadow-xl"
+                  />
+                </CardItem>
+                <CardItem
+                  translateZ="50"
+                  className="flex items-center justify-between mt-4"
+                >
+                  <span className={`text-sm ${tool.category === "Productivity" ? "text-green-500" : "text-purple-500"}`}>
+                    {tool.category}
+                  </span>
+                </CardItem>
+                <CardItem
+                  translateZ="60"
+                  className="text-lg font-semibold mt-2 dark:text-white"
+                >
+                  {tool.title}
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="70"
+                  className="text-sm text-muted-foreground mt-2"
+                >
+                  {tool.description}
+                </CardItem>
+                <CardItem translateZ="80" className="w-full mt-4">
+                  <Link href={tool.slug} className="w-full">
+                    <Button className="w-full">Find Out More</Button>
+                  </Link>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           ))}
         </div>
       </div>

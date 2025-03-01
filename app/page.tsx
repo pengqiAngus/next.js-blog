@@ -1,7 +1,6 @@
 import { AnnouncementBanner } from "@/components/layout/AnnouncementBanner";
 import { HeroSection } from "@/components/home/HeroSection";
 import { ContentSection } from "@/components/home/ContentSection";
-import { CategoriesSection } from "@/components/home/CategoriesSection";
 import { RecentPostsSection } from "@/components/home/RecentPostsSection";
 import { ToolsSection } from "@/components/home/ToolsSection";
 export default function Home() {
@@ -11,7 +10,6 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <ContentSection />
-        <CategoriesSection />
         <RecentPostsSection />
         <ToolsSection />
       </main>

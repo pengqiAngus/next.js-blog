@@ -13,7 +13,7 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({
+const MenuItem = ({
   setActive,
   active,
   item,
@@ -25,7 +25,7 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} className="relative  ">
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -39,14 +39,14 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_0.8rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
-                  layout // layout ensures smooth animation
+                  layout
                   className="w-max h-full p-4"
                 >
                   {children}
@@ -60,7 +60,7 @@ export const MenuItem = ({
   );
 };
 
-export const Menu = ({
+const Menu = ({
   setActive,
   children,
 }: {
@@ -69,15 +69,15 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-3 "
+      onMouseLeave={() => setActive(null)}
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-4 "
     >
       {children}
     </nav>
   );
 };
 
-export const ProductItem = ({
+const ProductItem = ({
   title,
   description,
   href,
@@ -89,7 +89,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link href={href} className="flex space-x-2 p-2">
       <Image
         src={src}
         width={140}
@@ -109,7 +109,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
@@ -119,3 +119,12 @@ export const HoveredLink = ({ children, ...rest }: any) => {
     </Link>
   );
 };
+
+const NavbarMenu = {
+  MenuItem,
+  Menu,
+  ProductItem,
+  HoveredLink
+};
+
+export default NavbarMenu;
