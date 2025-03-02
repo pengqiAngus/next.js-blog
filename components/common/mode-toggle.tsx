@@ -5,11 +5,15 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { useAtom } from "jotai";
+import { themeState } from "@/utils/jotail";
 
 export function ModeToggle() {
     const { theme, setTheme } = useTheme()
+      const [, setThemeState] = useAtom(themeState);
+
     const setThemeMode = (mode:string) => {
-        setTheme(mode);
+        setThemeState(mode);
     }
   return (
     <DropdownMenu>
@@ -30,9 +34,6 @@ export function ModeToggle() {
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setThemeMode("dark")}>
           Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeMode("system")}>
-          System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

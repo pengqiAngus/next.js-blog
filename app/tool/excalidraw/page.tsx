@@ -1,20 +1,9 @@
-"use client";
 import React from "react";
 import Head from "next/head";
 import { Card, CardContent } from "@/components/ui/card";
-import {  Github, BookOpen, Twitter } from "lucide-react";
-import dynamic from "next/dynamic";
-import { useRecoilValue } from "recoil";
-import { themeState } from "@/utils/recoil";
-
-const Excalidraw = dynamic(
-  async () => (await import("@excalidraw/excalidraw")).Excalidraw,
-  {
-    ssr: false,
-  },
-)
+import { Github, BookOpen, Twitter } from "lucide-react";
+import Excalidraw from "@/components/shared/Excalidraw";
 export default function ExcalidrawPage() {
-  const themeStateText = useRecoilValue(themeState) || 'light';
   return (
     <div>
       <div className="min-h-screen bg-background">
@@ -98,9 +87,7 @@ export default function ExcalidrawPage() {
               their visualization needs.
             </p>
             <div className="w-full rounded-xl overflow-hidden bg-card border-border shadow-2xl transition-all duration-300">
-              <div style={{ height: "500px" }}>
-                <Excalidraw theme={themeStateText} />
-              </div>
+              <Excalidraw />
             </div>
           </div>
 

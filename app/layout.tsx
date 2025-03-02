@@ -1,6 +1,5 @@
 // import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/common/theme-provider";
-import  RecoilContextProvider  from "@/components/common/recoilProvider";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { I18nProvider } from "@/components/common/I18nProvider";
@@ -29,7 +28,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="bg-background text-foreground">
-        <RecoilContextProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -45,7 +43,6 @@ export default function RootLayout({
               </div>
             </I18nProvider>
           </ThemeProvider>
-        </RecoilContextProvider>
       </body>
     </html>
   );
