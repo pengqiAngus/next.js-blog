@@ -1,20 +1,23 @@
 "use client";
-import React, { useEffect } from "react";
-import dynamic from "next/dynamic";
+import React, { useEffect, useState } from "react";
 import { useAtom } from "jotai";
 import { themeState } from "@/utils/jotail";
+import Image from "next/image";
+import {
+  Excalidraw,
+  convertToExcalidrawElements,
+} from "@excalidraw/excalidraw";
 
-const Excalidraw = dynamic(
-  async () => (await import("@excalidraw/excalidraw"))?.Excalidraw,
-  {
-    ssr: false,
-  }
-);
 export default function ExcalidrawPage() {
   const themeStateText = useAtom(themeState);
   return (
-    <div style={{ height: "500px" }}>
-      <Excalidraw />
+    <div style={{ height: "750px" }}>
+      {/* <Excalidraw /> */}
+      <img
+        src="/image/excalidraw.png"
+              alt="excalidraw"
+        className="object-cover  transition-transform duration-300 group-hover:scale-105"
+      />
     </div>
   );
 }

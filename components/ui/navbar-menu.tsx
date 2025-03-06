@@ -90,12 +90,11 @@ const ProductItem = ({
 }) => {
   return (
     <Link href={href} className="flex space-x-2 p-2">
-      <Image
+      <img
         src={src}
-        width={140}
-        height={70}
+        width={100}
         alt={title}
-        className="flex-shrink-0 rounded-md shadow-2xl"
+        className="flex-shrink-0 rounded-2xl shadow-2xl object-cover"
       />
       <div>
         <h4 className="text-xl font-bold mb-1 text-black dark:text-white">

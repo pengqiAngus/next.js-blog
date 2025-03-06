@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Head from "next/head";
 import { Card, CardContent } from "@/components/ui/card";
@@ -78,14 +79,14 @@ export default function ExcalidrawPage() {
 
           {/* Interactive Demo */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-6 dark:text-white">
+            {/* <h2 className="text-3xl font-bold mb-6 dark:text-white">
               Try It Now
             </h2>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
               Experience the power of Excalidraw right here. Start drawing,
               collaborate, and discover why thousands of teams trust us for
               their visualization needs.
-            </p>
+            </p> */}
             <div className="w-full rounded-xl overflow-hidden bg-card border-border shadow-2xl transition-all duration-300">
               <Excalidraw />
             </div>

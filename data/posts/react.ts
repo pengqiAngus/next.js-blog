@@ -15,7 +15,7 @@ const reactPosts: Post[] = [
     createdTime: "2025-02-25",
     author: "Deepak Kumar",
     content: `
-      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-gray-100 tracking-wide leading-relaxed">
+      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-white tracking-wide leading-relaxed">
         <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
         <p class="mb-6">The contemporary web landscape necessitates interfaces that seamlessly adapt to varying user behaviors, device constraints, and environmental conditions. <strong class="font-bold">Adaptive User Interfaces (UIs)</strong> are pivotal in ensuring a dynamic, personalized, and context-aware user experience. This article delves into methodologies for architecting <strong class="font-bold">self-configuring React components</strong>, leveraging state management, contextual awareness, and user interaction patterns to dynamically modify UI behavior in real-time.</p>
 
@@ -37,13 +37,13 @@ const reactPosts: Post[] = [
 
         <h2 class="text-2xl font-bold mt-8 mb-4">Foundational Principles of Adaptive UI Design</h2>
         <h3 class="text-xl font-semibold mt-6 mb-2">1. <strong>Dynamic State Management</strong></h3>
-        <p class="mb-6">Utilizing React’s <code class="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded font-mono text-sm">useState</code> and <code class="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded font-mono text-sm">useEffect</code> hooks enables real-time UI adjustments based on user interactions, fostering a responsive and dynamic experience.</p>
+        <p class="mb-6">Utilizing React’s <code class="bg-gray-200 dark:text-black px-1 py-0.5 rounded font-mono text-sm">useState</code> and <code class="bg-gray-200 dark:text-black px-1 py-0.5 rounded font-mono text-sm">useEffect</code> hooks enables real-time UI adjustments based on user interactions, fostering a responsive and dynamic experience.</p>
 
         <h3 class="text-xl font-semibold mt-6 mb-2">2. <strong>Global Context Awareness via Context API</strong></h3>
         <p class="mb-6">Employing the <strong class="font-bold">Context API</strong> allows for centralized state management, ensuring seamless UI adaptations across multiple components while circumventing prop drilling.</p>
 
         <h3 class="text-xl font-semibold mt-6 mb-2">3. <strong>Screen and Device Responsiveness</strong></h3>
-        <p class="mb-6">Through <strong class="font-bold">media queries, viewport detection, and external libraries (e.g., <code class="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded font-mono text-sm">react-device-detect</code>)</strong>, components can intelligently restructure content presentation based on screen resolution and device type.</p>
+        <p class="mb-6">Through <strong class="font-bold">media queries, viewport detection, and external libraries (e.g., <code class="bg-gray-200 dark:text-black px-1 py-0.5 rounded font-mono text-sm">react-device-detect</code>)</strong>, components can intelligently restructure content presentation based on screen resolution and device type.</p>
 
         <h3 class="text-xl font-semibold mt-6 mb-2">4. <strong>User Interaction-Driven Adaptation</strong></h3>
         <p class="mb-6">By analyzing user behaviors such as <strong class="font-bold">scrolling patterns, click frequency, and input device usage</strong>, UIs can evolve dynamically, refining interactivity and usability over time.</p>
@@ -160,7 +160,7 @@ export default App;</code></pre>
 
         <h3 class="text-xl font-semibold mt-6 mb-2">🔥 Key Considerations:</h3>
         <p class="mb-6">
-          ✅ <strong class="font-bold">Leverage hooks (<code class="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded font-mono text-sm">useState</code>, <code class="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded font-mono text-sm">useEffect</code>)</strong> to monitor UI states dynamically.<br>
+          ✅ <strong class="font-bold">Leverage hooks (<code class="bg-gray-200 dark:text-black px-1 py-0.5 rounded font-mono text-sm">useState</code>, <code class="bg-gray-200 dark:text-black px-1 py-0.5 rounded font-mono text-sm">useEffect</code>)</strong> to monitor UI states dynamically.<br>
           ✅ <strong class="font-bold">Implement Context API</strong> for global adaptability.<br>
           ✅ <strong class="font-bold">Utilize system preferences</strong> for accessibility and theming adjustments.<br>
           ✅ <strong class="font-bold">Enhance efficiency with lazy loading techniques.</strong><br>
@@ -194,7 +194,7 @@ export default App;</code></pre>
     createdTime: "2025-02-25",
     author: "Maria Kim",
     content: `
-      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-gray-100 tracking-wide leading-relaxed">
+      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-white tracking-wide leading-relaxed">
         <p class="mb-6"><img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Frpq2s8mgjtcdguhrt1gf.png" alt="Next.js" class="w-full max-w-md mx-auto rounded-lg" loading="lazy" /></p>
 
         <h2 class="text-2xl font-bold mt-8 mb-4">Definitions</h2>
@@ -315,7 +315,7 @@ export default App;</code></pre>
     createdTime: "2025-02-25",
     author: "Maria Kim",
     content: `
-      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-gray-100 tracking-wide leading-relaxed">
+      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-white tracking-wide leading-relaxed">
         <p class="mb-6">I was creating shared (common) components using <strong class="font-bold">Emotion</strong> in a new project. As I was considering how best to structure things for cleanliness and scalability, I happened to watch a YouTube video about the <strong class="font-bold">SOLD principle</strong>. That video led me to think that <strong class="font-bold">developing shared components using style inheritance</strong> could be advantageous for future expansion.</p>
 
         <p class="mb-6">So I changed all my shared components to use <strong class="font-bold">extension (inheritance)</strong>. However, I encountered an unexpected bug in the process. Through this bug, I learned the difference between:</p>
@@ -513,15 +513,15 @@ const StyledInputContainer = styled.div<{ variant: "default" | "error" }>\`
     createdTime: "2025-02-25",
     author: "Maria Kim",
     content: `
-    <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-gray-100">
+    <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-white">
       <img src="https://media2.dev.to/dynamic/image/width=800,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffgljpl2y4j29z7y2x4ku.png" alt="react img" class="w-full rounded-lg" />
 
-      <p class="leading-relaxed text-gray-700 dark:text-gray-300">
+      <p class="leading-relaxed text-gray-700 dark:text-white">
         When working with state management and data-fetching libraries in React applications, you might encounter an interesting behavior difference during logout flows or similar global state resets. Specifically, if you use <strong>Zustand</strong> to manage user state and <strong>React Query</strong> to manage server-side data, you might notice that resetting Zustand's state works seamlessly, but clearing React Query's cache sometimes requires extra care. This blog will explain <strong>why this happens</strong> and <strong>how to handle it properly</strong>.
       </p>
 
       <h2 class="text-2xl font-bold mt-8">A Common Logout Example</h2>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Imagine you have a logout function like this:
       </p>
       <pre class="rounded-lg p-4 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-x-auto">
@@ -534,10 +534,10 @@ const onLogout = async () => {
 };
         </code>
       </pre>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         At first glance, this looks fine. However, in practice, you might encounter <strong>inconsistent behavior</strong> with React Query's cache clearing, especially when navigating away (<code>router.push()</code>).
       </p>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         You might end up doing something like this instead:
       </p>
       <pre class="rounded-lg p-4 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-x-auto">
@@ -550,42 +550,42 @@ const onLogout = async () => {
 };
         </code>
       </pre>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Why does deferring the <code>queryClient.clear()</code> call with <code>Promise.resolve()</code> sometimes work better? And why is Zustand's <code>resetUser()</code> always fine?
       </p>
 
       <h2 class="text-2xl font-bold mt-8">Key Difference: Zustand vs. React Query</h2>
       
       <h3 class="text-xl font-semibold mt-6">🐻 Zustand - Simple Synchronous State Update</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         When you call <code>resetUser()</code> in Zustand, it:
       </p>
-      <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300">
+      <ol class="list-decimal pl-6 text-gray-700 dark:text-white">
         <li>Mutates the store state synchronously.</li>
         <li>Notifies all subscribed components to re-render if necessary.</li>
         <li>Ignores unmounted components since they are no longer subscribed.</li>
       </ol>
 
       <h3 class="text-xl font-semibold mt-6">🔥 React Query - Cache, Observers, and Side Effects</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         When you call <code>queryClient.clear()</code>, it:
       </p>
-      <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300">
+      <ol class="list-decimal pl-6 text-gray-700 dark:text-white">
         <li>Invalidates and removes query data from the cache.</li>
         <li>Notifies active subscriptions (e.g. components using <code>useQuery()</code> hooks).</li>
         <li>Handles ongoing network requests, retries, and refetches (if applicable).</li>
       </ol>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         The key problem is that <strong>if components are in the process of unmounting (e.g., due to <code>router.push()</code>) while <code>queryClient.clear()</code> is running</strong>, you can get into a race condition:
       </p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li>Components might unsubscribe while React Query is still notifying them.</li>
         <li>Ongoing network requests might still resolve after you clear the cache.</li>
         <li>React Query hooks might still trigger updates for unmounted components.</li>
       </ul>
 
       <h4 class="text-lg font-semibold mt-4">What is a Race Condition?</h4>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         A race condition happens when two or more operations happen at the same time, and the final outcome depends on the timing or order of those operations. In this case, clearing the React Query cache and unmounting components due to routing can overlap, leading to unexpected behavior or errors.
       </p>
 
@@ -595,25 +595,25 @@ const onLogout = async () => {
 Promise.resolve().then(() => queryClient.clear());
         </code>
       </pre>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         You defer the cache clearing to the next microtask. This allows React to:
       </p>
-      <ol class="list-decimal pl-6 text-gray-700 dark:text-gray-300">
+      <ol class="list-decimal pl-6 text-gray-700 dark:text-white">
         <li>Finish unmounting components triggered by <code>router.push()</code>.</li>
         <li>Unsubscribe any React Query observers tied to those components.</li>
         <li>Safely clear the cache afterward, without interfering with ongoing React lifecycle processes.</li>
       </ol>
 
       <h3 class="text-xl font-semibold mt-6">Why Zustand Is Always Safe</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Zustand's state update is <strong>synchronous</strong> and <strong>not lifecycle-sensitive</strong>:
       </p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li>If you call <code>resetUser()</code> and a component is still mounted, it re-renders.</li>
         <li>If the component is unmounted, it has already unsubscribed, and nothing happens.</li>
         <li>There's <strong>no async behavior or network lifecycle management</strong> to interfere.</li>
       </ul>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Because of this simplicity, you can <strong>reset Zustand state at any time</strong> without worrying about navigation or component lifecycles.
       </p>
 
@@ -621,13 +621,13 @@ Promise.resolve().then(() => queryClient.clear());
       <img src="https://media2.dev.to/dynamic/image/width=800,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Feltwnfzf20wu29k2yrzi.png" alt="summary" class="w-full rounded-lg" />
 
       <h2 class="text-2xl font-bold mt-8">Final Thoughts</h2>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Understanding <strong>the difference between local synchronous state (Zustand) and asynchronous data-fetching state (React Query)</strong> is crucial when designing logout flows or global state resets. Zustand's simplicity allows for carefree state updates, while React Query requires <strong>more attention to lifecycle timing.</strong>
       </p>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         When in doubt, <strong>defer cache clearing</strong> to ensure <strong>it runs after routing</strong> transitions complete. This small adjustment can <strong>save you from subtle race conditions and improve your app's stability.</strong>
       </p>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Happy coding! 🚀
       </p>
     </div>
@@ -647,19 +647,19 @@ Promise.resolve().then(() => queryClient.clear());
     createdTime: "2025-02-25",
     author: "Sankalan Dasgupta",
     content: `
-    <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-gray-100">
-      <p class="leading-relaxed text-gray-700 dark:text-gray-300">
+    <div class="max-w-3xl mx-auto space-y-6 tracking-normal text-gray-900 dark:text-white">
+      <p class="leading-relaxed text-gray-700 dark:text-white">
         React Native has established itself as a powerful framework for building cross-platform mobile applications, allowing organizations to maintain a single codebase while targeting multiple platforms. However, as enterprise applications grow in complexity, performance optimization becomes critical for user experience and business success.
       </p>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         In this guide, I'll share strategies and best practices for optimizing enterprise-scale React Native applications, based on experiences implementing these techniques at scale.
       </p>
 
       <h2 class="text-2xl font-bold mt-8">Performance Metrics That Matter</h2>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Before diving into optimization techniques, it's important to establish which metrics matter most:
       </p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li><strong>Time to Interactive (TTI)</strong>: How quickly users can interact with your app after launch</li>
         <li><strong>Frame Rate</strong>: Maintaining a smooth 60fps for animations and scrolling</li>
         <li><strong>Memory Usage</strong>: Preventing crashes and slowdowns from excessive memory consumption</li>
@@ -669,7 +669,7 @@ Promise.resolve().then(() => queryClient.clear());
 
       <h2 class="text-2xl font-bold mt-8">Architecture Optimization</h2>
       <h3 class="text-xl font-semibold mt-6">Implement a Strong Component Architecture</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Large enterprise apps benefit from a thoughtful component architecture:
       </p>
       <pre class="rounded-lg p-4 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-x-auto">
@@ -697,10 +697,10 @@ const ProductCard = ({ product, onAddToCart }) => {
       </pre>
 
       <h3 class="text-xl font-semibold mt-6">State Management Patterns</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Choose the right state management approach based on your app's complexity:
       </p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li><strong>Context API</strong>: For simpler state needs with moderate component nesting</li>
         <li><strong>Redux</strong>: For complex state with many interactions and middleware requirements</li>
         <li><strong>MobX</strong>: For reactive applications with complex derived state</li>
@@ -709,7 +709,7 @@ const ProductCard = ({ product, onAddToCart }) => {
 
       <h2 class="text-2xl font-bold mt-8">Rendering Optimization</h2>
       <h3 class="text-xl font-semibold mt-6">Upgrade to FlashList for Superior List Performance</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         While FlatList is React Native's standard list component, FlashList by Shopify offers significant performance improvements for enterprise applications:
       </p>
       <pre class="rounded-lg p-4 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-x-auto">
@@ -734,8 +734,8 @@ const ProductListScreen = () => {
 };
         </code>
       </pre>
-      <p class="text-gray-700 dark:text-gray-300"><strong>Why FlashList outperforms FlatList:</strong></p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white"><strong>Why FlashList outperforms FlatList:</strong></p>
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li>Uses cell recycling to minimize memory usage and reduce garbage collection</li>
         <li>Requires <code>estimatedItemSize</code> to pre-allocate memory more efficiently</li>
         <li>Renders off-screen items much more efficiently</li>
@@ -744,7 +744,7 @@ const ProductListScreen = () => {
       </ul>
 
       <h3 class="text-xl font-semibold mt-6">Implement Fast Image Loading with react-native-fast-image</h3>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Replace standard Image components with FastImage for better performance:
       </p>
       <pre class="rounded-lg p-4 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-x-auto">
@@ -766,8 +766,8 @@ const ProductImage = ({ uri, priority = 'normal' }) => {
 };
         </code>
       </pre>
-      <p class="text-gray-700 dark:text-gray-300"><strong>Why FastImage outperforms standard Image component:</strong></p>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white"><strong>Why FastImage outperforms standard Image component:</strong></p>
+      <ul class="list-disc pl-6 text-gray-700 dark:text-white">
         <li>Uses native image caching libraries (SDWebImage on iOS, Glide on Android)</li>
         <li>Provides priority settings for critical images</li>
         <li>Handles image caching more efficiently</li>
@@ -776,10 +776,10 @@ const ProductImage = ({ uri, priority = 'normal' }) => {
       </ul>
 
       <h2 class="text-2xl font-bold mt-8">Conclusion</h2>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Optimizing enterprise React Native applications requires a systematic approach addressing architecture, rendering, networking, and build processes. By implementing these strategies—especially upgrading to high-performance libraries like FlashList and FastImage, leveraging rasterization techniques, and adopting Turbo Modules—you can deliver a premium experience to your users while maintaining developer productivity and code maintainability.
       </p>
-      <p class="text-gray-700 dark:text-gray-300">
+      <p class="text-gray-700 dark:text-white">
         Optimization is an never ending process that should be guided by data. Establish performance baselines, continuously monitor real-world metrics, and focus your efforts where they'll have the greatest impact on user experience.
       </p>
     </div>

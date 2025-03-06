@@ -25,7 +25,7 @@ export default function CategoryPage({ params }: Props) {
       <ScrollArea className="w-full overflow-auto relative h-full rounded-2xl p-10 bg-gradient-to-br from-slate-800  to-purple-900   ">
         <div className="grid md:grid-cols-3 gap-6 ">
           {(cat.slug === "all"
-            ? posts.slice(0, 9)
+            ? posts
             : filterPostsBySubCategory(posts, cat.slug)
           ).map((post: Post) => (
             <CategoryCard

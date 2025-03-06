@@ -5,7 +5,7 @@ import { type Post } from "@/data/posts/index";
 export function BlogHeader({ title, author, createdTime, type, originalURL, ...rest }: Post) {
   return (
     <div className="relative w-full dark:bg-black pt-20">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto p-4">
         <div className="mb-4 flex items-center gap-2">
           <Link
             key={type}

@@ -91,7 +91,7 @@ export function RecentPostsSection() {
             {/* See More Link */}
             <div className="text-right">
               <Link
-                href="/categories/blog/all"
+                href="/categories/all"
                 className="inline-flex items-center gap-2 text-foreground dark:text-white font-semibold hover:text-primary transition-colors"
               >
                 See More New Articles

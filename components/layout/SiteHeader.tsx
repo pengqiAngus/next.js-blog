@@ -25,32 +25,38 @@ export function SiteHeader() {
                   <NavbarMenu.ProductItem
                     title="All"
                     href="/categories/all"
-                    src="https://assets.aceternity.com/demos/algochurn.webp"
+                    src="/image/frontend_online.jpg"
                     description="Browse all articles and content categories"
                   />
                   <NavbarMenu.ProductItem
                     title="React"
                     href="/categories/react"
-                    src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+                    src="/image/react.jpg"
                     description="Technical articles and best practices about React"
                   />
                   <NavbarMenu.ProductItem
                     title="Ai"
                     href="/categories/ai"
-                    src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+                    src="/image/ai.jpg"
                     description="Articles about artificial intelligence and machine learning"
                   />
                   <NavbarMenu.ProductItem
-                    title="Tools"
+                    title="More"
                     href="/"
-                    src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                    description="Useful tools and development resources"
+                    src="/image/cms.jpg"
+                    description="find out more"
                   />
                 </div>
               </NavbarMenu.MenuItem>
-              <NavbarMenu.MenuItem setActive={setActive} active={active} item="Tools">
+              <NavbarMenu.MenuItem
+                setActive={setActive}
+                active={active}
+                item="Tools"
+              >
                 <div className="flex flex-col space-y-4 text-sm">
-                  <NavbarMenu.HoveredLink href="/tool/excalidraw">Excalidraw</NavbarMenu.HoveredLink>
+                  <NavbarMenu.HoveredLink href="/tool/excalidraw">
+                    Excalidraw
+                  </NavbarMenu.HoveredLink>
                 </div>
               </NavbarMenu.MenuItem>
             </NavbarMenu.Menu>

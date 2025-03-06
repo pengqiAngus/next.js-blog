@@ -14,14 +14,14 @@ const aiPosts: Post[] = [
     createdTime: "2025-02-25",
     author: "Michelle Corbin",
     content: `
-    <div class="prose max-w-none text-gray-900 dark:text-gray-100">
+    <div class="prose max-w-none text-gray-900 dark:text-white">
       <p class="font-bold mb-6">Discover the most popular content for 2024's hottest topic: generative AI</p>
 
       <p class="mb-6">Generative AI is revolutionizing the way we build, create, and innovate. With advancements in large language models (LLMs), AI agents, and open-source platforms, there's never been a better time to dive deep into this transformative field.</p>
 
       <p class="mb-8">Whether you're a developer eager to build AI applications, a data scientist exploring new forecasting methods, or an enthusiast looking to dive into the world of LLMs, we've curated a list of the top 10 blogs, articles, and tutorials to help you stay ahead of the curve and inspire your next AI project. Explore the best content that will shape your generative AI journey this year!</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         1. Contributing knowledge to the open source Granite model using InstructLab
       </h2>
 
@@ -31,7 +31,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore <a href="https://developer.ibm.com/components/instructlab/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about InstructLab.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         2. Build a local AI co-pilot using IBM Granite Code, Ollama, and Continue
       </h2>
 
@@ -41,7 +41,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about the Granite models. And, explore <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         3. Using the IBM Granite models for time series forecasting
       </h2>
 
@@ -49,7 +49,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about the Granite models. And, explore <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         4. Build a RAG application with watsonx.ai flows engine
       </h2>
 
@@ -59,7 +59,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore this <a href="https://developer.ibm.com/series/use-various-models-with-watsonx-flows-engine/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">tutorial series on IBM Developer</a> about using watsonx.ai flows engine.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         5. Contributing knowledge to open-source LLMs like the Granite models using the InstructLab UI
       </h2>
 
@@ -69,7 +69,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/instructlab/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about InstructLab.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         6. Create a LangChain AI agent in Python using watsonx
       </h2>
 
@@ -79,7 +79,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore <a href="https://developer.ibm.com/languages/python/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">more content on IBM Developer</a> about Python.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         7. Leveraging CrewAI and IBM watsonx
       </h2>
 
@@ -87,7 +87,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/watsonx/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about <a href="https://www.ibm.com/products" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx</a>.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         8. Build a RAG agent to answer complex questions
       </h2>
 
@@ -97,7 +97,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore more <a href="https://developer.ibm.com/technologies/rag/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about retrieval-augmented generation (RAG).</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         9. Generating SQL from text with LLMs
       </h2>
 
@@ -105,7 +105,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/watsonx-ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about <a href="https://www.ibm.com/products/watsonx-ai" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">watsonx.ai</a>.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         10. Developing a gen AI application using IBM Granite Code
       </h2>
 
@@ -115,7 +115,7 @@ const aiPosts: Post[] = [
 
       <p class="mb-8">Explore more <a href="https://developer.ibm.com/components/granite-models/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">content on IBM Developer</a> about the Granite models.</p>
 
-      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">
         Want more?
       </h2>
 
@@ -141,7 +141,7 @@ const aiPosts: Post[] = [
     createdTime: "2025-02-24",
     author: "Dwayne McDaniel",
     content: `
-    <div class="prose max-w-none text-gray-900 dark:text-gray-100">
+    <div class="prose max-w-none text-gray-900 dark:text-white">
       <p>It is not a coincidence that non-human identities (NHIs) have come into focus recently while AI-powered tools and autonomous agents are rapidly being adopted. In fact, this is partially what is driving the explosion of NHIs in the enterprise. This has sparked a lot of <a href="https://www.cyberark.com/resources/blog/why-machine-identities-are-essential-strands-in-your-zero-trust-strategy?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">research and conversations</a> about <a href="https://blog.gitguardian.com/identities-do-not-exist-in-a-vacuum/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">machine identity and governance</a>.</p>
 
       <p>Like human users of systems, NHIs, such as AI agents, bots, scripts, and cloud workloads, operate using secrets. These credentials grant access to sensitive systems and data. They can take many forms and must always be accounted for, from creation to offboarding. Unlike humans, machines can't use multifactor authentication or passkeys, and developers can generate hundreds of these credentials through their work deploying applications.</p>
@@ -150,7 +150,7 @@ const aiPosts: Post[] = [
 
       <p>The time to tackle NHI security in your increasingly AI-powered organization is now. Let's take a look at some of the risks associated with AI agents NHI's.</p>
 
-      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-white">
         <a name="the-nhi-risks-from-ai" href="#the-nhi-risks-from-ai"></a>
         The NHI Risks From AI
       </h2>
@@ -188,7 +188,7 @@ const aiPosts: Post[] = [
 
       <p>This is not isolated to your development teams. In fact, as we see shadow IT become the majority of the IT spend in many organizations, the real risks of data exposure, proprietary business data, and credential leakage spread throughout the whole of the enterprise.</p>
 
-      <p>For example, if a finance team uses an AI-powered chatbot to automate invoice processing, and their prompt contains <code class="bg-gray-200 dark:bg-gray-800 px-1 py-0.5 rounded">Find all invoices over $100,000 in the past 6 months using API key ABC123</code>, that API key will most likely now be logged. If those logs are left in plaintext, they would allow an attacker unauthorized access to that invoicing system. Hopefully, that key is properly scoped.</p>
+      <p>For example, if a finance team uses an AI-powered chatbot to automate invoice processing, and their prompt contains <code class="text-sm text-gray-800 dark:text-gray-200 font-mono"  class="<code class="text-sm text-gray-800 dark:text-gray-200 font-mono"  class="text-sm text-gray-800 dark:text-gray-200 font-mono"  dark:bg-gray-800 px-1 py-0.5 rounded">Find all invoices over $100,000 in the past 6 months using API key ABC123</code>, that API key will most likely now be logged. If those logs are left in plaintext, they would allow an attacker unauthorized access to that invoicing system. Hopefully, that key is properly scoped.</p>
 
       <p>Safeguards need to be put in place to prevent developers and all users from embedding sensitive data in prompts and logs. Ideally, each LLM output can be scanned for information that should not be there. While defining what returned data is sensitive can be tricky, finding and eliminating secrets should be straightforward and prioritized.</p>
 
@@ -219,7 +219,7 @@ const aiPosts: Post[] = [
       <p>For an example of an AI-generated risk, imagine a developer asks Copilot to generate an API call to a cloud service, and it produces:</p>
 
       <div class="highlight js-code-highlight bg-gray-100 dark:bg-gray-900 p-4 rounded">
-        <pre class="highlight plaintext"><code>import requests
+        <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >import requests
 API_KEY = "sk_live_ABC123XYZ"
 response = requests.get("https://api.example.com/data", headers={"Authorization": f"Bearer {API_KEY}"})</code></pre>
       </div>
@@ -228,9 +228,9 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
 
       <p>While that is not a real key, a developer under a time crunch or who is not familiar with secrets security might just swap a real key for the generated one. If left unchecked, such code may get committed to version control systems, exposing credentials to attackers who gain access or anyone if the repo becomes public.</p>
 
-      <p>This pattern is part of how <a href="https://www.gitguardian.com/state-of-secrets-sprawl-report-2024?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">secrets sprawl has continued to get worse over time</a>. We need to help developers with guardrails that help speed them along while scanning all code before committing it, as you can do with <a href="https://www.gitguardian.com/ggshield?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">GitGuardian's ggshield</a> and pre-commit hooks. Ideally, they can catch the secret before they even perform a <code class="bg-gray-200 dark:bg-gray-800 px-1 py-0.5 rounded">git add</code> using our <a href="https://blog.gitguardian.com/visual-studio-code-extension/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">VSCode extension</a>, which finds secrets when the file is saved.</p>
+      <p>This pattern is part of how <a href="https://www.gitguardian.com/state-of-secrets-sprawl-report-2024?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">secrets sprawl has continued to get worse over time</a>. We need to help developers with guardrails that help speed them along while scanning all code before committing it, as you can do with <a href="https://www.gitguardian.com/ggshield?ref=blog.gitguardian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">GitGuardian's ggshield</a> and pre-commit hooks. Ideally, they can catch the secret before they even perform a <code class="text-sm text-gray-800 dark:text-gray-200 font-mono"  class="<code class="text-sm text-gray-800 dark:text-gray-200 font-mono"  class="text-sm text-gray-800 dark:text-gray-200 font-mono"  dark:bg-gray-800 px-1 py-0.5 rounded">git add</code> using our <a href="https://blog.gitguardian.com/visual-studio-code-extension/" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">VSCode extension</a>, which finds secrets when the file is saved.</p>
 
-      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-white">
         <a name="the-path-forward-securing-nonhuman-identities" href="#the-path-forward-securing-nonhuman-identities"></a>
         The Path Forward: Securing Non-Human Identities
       </h2>
@@ -245,7 +245,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
 
       <p>GitGuardian can also prevent sensitive data from being embedded in prompts or logs. Finding these incidents in real-time can help you ensure sanitation is happening and logs are not as helpful to an attacker.</p>
 
-      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-gray-100">
+      <h2 class="text-2xl font-bold mt-6 mb-4 text-gray-900 dark:text-white">
         <a name="getting-your-nhi-governance-strategy-ready-for-the-speed-of-ai" href="#getting-your-nhi-governance-strategy-ready-for-the-speed-of-ai"></a>
         Getting your NHI governance strategy ready for the speed of AI
       </h2>
@@ -270,7 +270,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
     createdTime: "2025-02-25",
     author: "Duc Nguyen Thanh",
     content: `
-    <div class="prose max-w-none text-gray-900 dark:text-gray-100">
+    <div class="prose max-w-none text-gray-900 dark:text-white">
       <p>Ever wondered how AI can detect emotions from faces? 🤖💡</p>
 
       <p>Meet <strong>AI.Facial.Emotion</strong> – a lightweight and powerful .NET library that can analyze facial emotions, age, and gender in real-time. Whether you're building chatbots, customer analytics, security systems, or healthcare apps, this tool makes it easy to integrate AI-powered facial analysis into your projects.</p>
@@ -284,11 +284,11 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
         🎯 What Can It Do?
       </h2>
 
-      <p>✅ Detect Emotions – Identify happiness, sadness, anger, surprise, and more.<br>
+      <div>✅ Detect Emotions – Identify happiness, sadness, anger, surprise, and more.<div class="my-2"> </div>
       ✅ Estimate Age – Predict an approximate age range.<br>
       ✅ Classify Gender – Recognize male or female faces.<br>
       ✅ Optimized for .NET – Works with .NET 6, 7, 8, and 9.<br>
-      ✅ Multiple Input Formats – Accepts image URLs, Base64 strings, and file streams.</p>
+      ✅ Multiple Input Formats – Accepts image URLs, Base64 strings, and file streams.</div>
 
       <hr>
       <h2>
@@ -312,7 +312,9 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
       </p>
 
       <div class="highlight js-code-highlight">
-      <pre class="highlight plaintext"><code>dotnet add package AI.Facial.Emotion
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto">
+      <code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >
+      dotnet add package AI.Facial.Emotion
 
       </code></pre>
       </div>
@@ -323,7 +325,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
       </p>
 
       <div class="highlight js-code-highlight">
-      <pre class="highlight plaintext"><code>using AI.Facial.Emotion;
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >using AI.Facial.Emotion;
 
       var builder = WebApplication.CreateBuilder(args);
       builder.Services.AddSingleton&lt;EmotionAnalyzer&gt;();
@@ -349,7 +351,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
       </p>
 
       <div class="highlight js-code-highlight">
-      <pre class="highlight plaintext"><code>var analyzer = new EmotionAnalyzer();
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >var analyzer = new EmotionAnalyzer();
       var result = await analyzer.AnalyzeEmotionFromUrlAsync("https://example.com/image.jpg");
 
       Console.WriteLine($"Emotion: {result.Emotion}");
@@ -362,7 +364,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
       </p>
 
       <div class="highlight js-code-highlight">
-      <pre class="highlight plaintext"><code>var base64Image = "iVBORw0KGgoAAAANSUhEUgAA...";
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >var base64Image = "iVBORw0KGgoAAAANSUhEUgAA...";
       var result = await analyzer.AnalyzeEmotionFromBase64Async(base64Image);
 
       Console.WriteLine($"Emotion: {result.Emotion}");
@@ -375,7 +377,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
       </p>
 
       <div class="highlight js-code-highlight">
-      <pre class="highlight plaintext"><code>using var fileStream = File.OpenRead("image.jpg");
+      <pre class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto"><code class="text-sm text-gray-800 dark:text-gray-200 font-mono" >using var fileStream = File.OpenRead("image.jpg");
       var result = await analyzer.AnalyzeEmotionFromStreamAsync(fileStream);
 
       Console.WriteLine($"Emotion: {result.Emotion}");
@@ -416,34 +418,34 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
     author: "artificialintelligenceee",
     content: `
     <div class="prose prose-lg max-w-none text-gray-800 dark:text-gray-200 tracking-wide">
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI is Changing Coding Forever</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">AI is Changing Coding Forever</h2>
       <p class="leading-relaxed mb-6">75% of developers use AI daily, and 25% of Google’s new code is AI-generated. AI is making coding faster and easier for everyone.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI Tools Were Too Expensive—Until Now</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">AI Tools Were Too Expensive—Until Now</h2>
       <p class="leading-relaxed mb-6">Tools like ChatGPT Pro cost $200/month, but Google’s new Gemini Code Assist is free for all developers.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">What is Gemini Code Assist?</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">What is Gemini Code Assist?</h2>
       <p class="leading-relaxed mb-6">Gemini Code Assist is a free AI coding tool that supports all programming languages and gives 180,000 code completions monthly.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Gemini Code Assist: 90x Better Than Others</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">Gemini Code Assist: 90x Better Than Others</h2>
       <p class="leading-relaxed mb-6">With 180,000 code completions per month, Gemini Code Assist beats other free tools by a huge margin.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">AI-Powered Code Reviews for Free</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">AI-Powered Code Reviews for Free</h2>
       <p class="leading-relaxed mb-6">Gemini Code Assist for GitHub offers free AI code reviews, saving time and improving code quality.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">How to Use Gemini Code Assist</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">How to Use Gemini Code Assist</h2>
       <p class="leading-relaxed mb-6">Gemini Code Assist works in Visual Studio Code, JetBrains IDEs, and GitHub, so you never need to leave your IDE.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Write Code Faster with AI</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">Write Code Faster with AI</h2>
       <p class="leading-relaxed mb-6">Gemini Code Assist helps you write, explain, and refine code using plain English prompts—no switching tools needed.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Improve Large Codebases Easily</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">Improve Large Codebases Easily</h2>
       <p class="leading-relaxed mb-6">With 128,000 input tokens, Gemini Code Assist can analyze and improve big projects quickly and efficiently.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Custom Code Reviews for Teams</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">Custom Code Reviews for Teams</h2>
       <p class="leading-relaxed mb-6">Teams can enforce coding standards with AI-powered reviews, ensuring consistency across projects.</p>
 
-      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-gray-100">Get Started with Gemini Code Assist Today</h2>
+      <h2 class="mb-4 font-bold text-2xl text-gray-900 dark:text-white">Get Started with Gemini Code Assist Today</h2>
       <p class="leading-relaxed mb-6">Install Gemini Code Assist in Visual Studio Code, JetBrains IDEs, or GitHub for free and start coding smarter.</p>
 
       <p class="leading-relaxed mb-6">
@@ -469,7 +471,7 @@ response = requests.get("https://api.example.com/data", headers={"Authorization"
     createdTime: "2025-02-25",
     author: "Dariel Vila",
     content: `
-      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-gray-100 tracking-wide leading-relaxed">
+      <div class="prose dark:prose-invert max-w-none text-gray-900 dark:text-white tracking-wide leading-relaxed">
         <p class="mb-6">KaibanJS is redefining how developers build multi-agent AI systems. Whether automating workflows, optimizing data pipelines, or enhancing research processes, developers worldwide are using KaibanJS in innovative ways. With over <strong class="font-bold">120,000 agentic team runs</strong> and <strong class="font-bold">1,000 GitHub stars</strong>, it is clear that the open-source community is embracing KaibanJS for practical, real-world applications.</p>
 
         <p class="mb-6">This article explores <strong class="font-bold">20+ use cases</strong> where multi-agent AI is transforming industries, from healthcare to SaaS development.</p>

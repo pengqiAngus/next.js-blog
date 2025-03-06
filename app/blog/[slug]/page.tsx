@@ -21,7 +21,7 @@ export default  function BlogPost({ params: {  slug } }: { params: { slug: strin
             <Alert className="mb-6">
               <Info className="h-4 w-4" />
               <AlertDescription>
-                选中任意文字，即可获取AI解释说明
+                Select any text to get an AI explanation
               </AlertDescription>
             </Alert>
             <TextExplainer>
