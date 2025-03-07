@@ -24,15 +24,13 @@ export function LanguageSwitcher() {
 
   useEffect(() => {
     setMounted(true);
-    const savedLanguage = localStorage.getItem('selectedLanguage');
-    if (savedLanguage) {
-      setCurrentLanguage(savedLanguage);
-    }
+    const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
+    setCurrentLanguage(savedLanguage);
   }, []);
 
-  const switchLanguage = (newLocale: string) => {
+    const switchLanguage = (newLocale: string) => {
     const currentPath = pathname || '/';
-    localStorage.setItem('selectedLanguage', newLocale);
+    localStorage.setItem('i18nextLng', newLocale);
     setCurrentLanguage(newLocale);
     router.push(currentPath);
   };

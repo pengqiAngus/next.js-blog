@@ -22,5 +22,26 @@
     "allPosts": "所有文章",
     "readTime": "阅读时间 {{time}} 分钟",
     "publishedOn": "发布于"
+  },
+  "header": {
+    "home": "首页",
+    "posts": "文章",
+    "all": "全部",
+    "react": "React",
+    "ai": "人工智能",
+    "more": "更多",
+    "allDescription": "浏览所有文章和内容分类",
+    "reactDescription": "关于React的技术文章和最佳实践",
+    "aiDescription": "关于人工智能和机器学习的文章",
+    "moreDescription": "了解更多",
+    "tools": "工具",
+    "excalidraw": "Excalidraw"
+  },
+  "trending": {
+    "readMore": "阅读更多",
+    "viewMore": "点击查看更多内容"
+  },
+  "blogDetail": {
+    "aiExplanation": "选择任意文本获取AI解释"
   }
 }

@@ -7,7 +7,8 @@
     "search": "Search",
     "darkMode": "Dark Mode",
     "lightMode": "Light Mode",
-    "switchLanguage": "Change Language"
+    "switchLanguage": "Change Language",
+    "announcement": "Learn, Explore, Love Life & Code! Let's grow together! 🚀"
   },
   "home": {
     "title": "Welcome,",
@@ -22,5 +23,26 @@
     "allPosts": "All Posts",
     "readTime": "{{time}} min read",
     "publishedOn": "Published on"
+  },
+  "header": {
+    "home": "Home",
+    "posts": "Posts",
+    "all": "All",
+    "react": "React",
+    "ai": "Ai",
+    "more": "More",
+    "allDescription": "Browse all articles and content categories",
+    "reactDescription": "Technical articles and best practices about React",
+    "aiDescription": "Articles about artificial intelligence and machine learning",
+    "moreDescription": "find out more",
+    "tools": "Tools",
+    "excalidraw": "Excalidraw"
+  },
+  "trending": {
+    "readMore": "Read more",
+    "viewMore": "Click to view more content"
+  },
+  "blogDetail": {
+    "aiExplanation": "Select any text to get an AI explanation"
   }
 }

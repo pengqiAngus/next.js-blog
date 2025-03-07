@@ -6,8 +6,11 @@ import { type Post } from "@/data/posts/index";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { useTranslation } from 'react-i18next';
 
-export function TrendingPostCard({ slug, image, type, title, description = "点击查看更多内容" }: Post & { description?: string }) {
+export function TrendingPostCard({ slug, image, type, title, description }: Post & { description?: string }) {
+  const { t } = useTranslation();
+  const defaultDescription = t('trending.viewMore');
   const [active, setActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -98,7 +101,7 @@ export function TrendingPostCard({ slug, image, type, title, description = "点�
                   href={`/blog/${slug}`}
                   className="inline-block px-6 py-3 bg-purple-500 text-white rounded-full font-semibold hover:bg-purple-600 transition-colors"
                 >
-                  read more
+                  {t('trending.readMore')}
                 </Link>
               </div>
             </motion.div>
