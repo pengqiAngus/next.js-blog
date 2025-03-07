@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { Compare } from "@/components/ui/compare";
+import { useTranslation } from "react-i18next";
 
 export function ContentSection() {
+  const { t } = useTranslation();
   return (
     <section className="py-12 bg-[#f3f3f3] dark:bg-[#0f0f10]">
       <div className="container mx-auto px-4">
@@ -32,7 +34,7 @@ export function ContentSection() {
                   translateZ="50"
                   className="text-xl font-bold text-center mb-4 dark:text-white"
                 >
-                  Tool Of The Day
+                  {t('home.toolOfTheDay')}
                 </CardItem>
                 <CardItem
                   translateZ="100"
@@ -71,7 +73,7 @@ export function ContentSection() {
                 </CardItem>
                 <CardItem translateZ="80" className="w-full mt-4">
                   <Link href="/tool/excalidraw" className="w-full">
-                    <Button className="w-full">Find Out More</Button>
+                    <Button className="w-full">{t('home.findOutMore')}</Button>
                   </Link>
                 </CardItem>
               </CardBody>

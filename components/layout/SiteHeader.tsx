@@ -5,6 +5,7 @@ import { ModeToggle } from "@/components/common/mode-toggle";
 import { ToolDropMenu } from "@/components/common/toolsDropMenu";
 import { useState } from "react";
 import NavbarMenu from "@/components/ui/navbar-menu";
+import { LanguageSwitcher } from "@/components/common/LanguageSwitcher";
 
 export function SiteHeader() {
   const [active, setActive] = useState<string | null>(null);
@@ -61,7 +62,8 @@ export function SiteHeader() {
               </NavbarMenu.MenuItem>
             </NavbarMenu.Menu>
           </div>
-          <div className="flex-1 flex justify-end">
+          <div className="flex-1 flex justify-end gap-2">
+            <LanguageSwitcher />
             <ModeToggle />
           </div>
         </div>

@@ -13,11 +13,14 @@
     "title": "欢迎，",
     "subtitle": "分享思想和创意的地方",
     "recentPosts": "最近文章",
-    "readMore": "阅读更多"
+    "trendingPosts": "热门文章",
+    "readMore": "阅读更多",
+    "toolsTitle": "好工具让工作更轻松",
+    "findOutMore": "了解更多"
   },
   "blog": {
     "allPosts": "所有文章",
     "readTime": "阅读时间 {{time}} 分钟",
     "publishedOn": "发布于"
   }
-} 
+}

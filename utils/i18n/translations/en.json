@@ -13,11 +13,14 @@
     "title": "Welcome,",
     "subtitle": "A place to share thoughts and ideas",
     "recentPosts": "Recent Posts",
-    "readMore": "Read More"
+    "trendingPosts": "Trending Posts",
+    "readMore": "Read More",
+    "toolsTitle": "A GOOD TOOL IMPROVES THE WAY YOU WORK",
+    "findOutMore": "Find Out More"
   },
   "blog": {
     "allPosts": "All Posts",
     "readTime": "{{time}} min read",
     "publishedOn": "Published on"
   }
-} 
+}

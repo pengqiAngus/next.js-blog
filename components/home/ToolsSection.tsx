@@ -6,15 +6,17 @@ import { Button } from "@/components/ui/button"
 import { ArrowUpRight } from "lucide-react"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { featuredTools } from "@/data/tools/index"
+import { useTranslation } from "react-i18next"
 
 export function ToolsSection() {
+  const { t } = useTranslation();
   return (
     <section className="py-20 bg-[#f3f3f3] dark:bg-zinc-900">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-start mb-16">
           <h2 className="text-5xl md:text-7xl font-black text-foreground dark:text-white tracking-tight max-w-3xl leading-tight relative">
             <span className="relative">
-              A GOOD TOOL IMPROVES THE WAY YOU WORK.
+              {t('home.toolsHeading')}
             </span>
           </h2>
           {/* <Link
@@ -66,7 +68,7 @@ export function ToolsSection() {
                 </CardItem>
                 <CardItem translateZ="80" className="w-full mt-4">
                   <Link href={tool.slug} className="w-full">
-                    <Button className="w-full">Find Out More</Button>
+                    <Button className="w-full">{t('home.findOutMore')}</Button>
                   </Link>
                 </CardItem>
               </CardBody>

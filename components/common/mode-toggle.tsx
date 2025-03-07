@@ -28,10 +28,16 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setThemeMode("light")}>
+        <DropdownMenuItem 
+          onClick={() => setThemeMode("light")}
+          className={`cursor-pointer ${theme === 'light' ? 'bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground' : ''}`}
+        >
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeMode("dark")}>
+        <DropdownMenuItem 
+          onClick={() => setThemeMode("dark")}
+          className={`cursor-pointer ${theme === 'dark' ? 'bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground' : ''}`}
+        >
           Dark
         </DropdownMenuItem>
       </DropdownMenuContent>
