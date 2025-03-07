@@ -1,38 +1,44 @@
 "use client";
 
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { 
-  DropdownMenu, 
-  DropdownMenuContent, 
-  DropdownMenuItem, 
-  DropdownMenuTrigger 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Languages } from "lucide-react";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const languageNames = {
-  en: 'English',
-  zh: '中文',
+  en: "English",
+  zh: "中文",
 };
 
 export function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
-  const [currentLanguage, setCurrentLanguage] = useState('en');
-
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+  const { i18n } = useTranslation();
   useEffect(() => {
     setMounted(true);
-    const savedLanguage = localStorage.getItem('i18nextLng') || 'en';
+
+    const savedLanguage = localStorage.getItem("i18nextLng") || "en";
     setCurrentLanguage(savedLanguage);
   }, []);
 
-    const switchLanguage = (newLocale: string) => {
-    const currentPath = pathname || '/';
-    localStorage.setItem('i18nextLng', newLocale);
-    setCurrentLanguage(newLocale);
-    router.push(currentPath);
+  const switchLanguage = async (newLocale: string) => {
+    // 切换i18next的语言
+    await i18n.changeLanguage(newLocale);
+
+    // 存储用户语言选择到本地存储
+    localStorage.setItem("selectedLanguage", newLocale);
+
+    // 使用更温和的方式应用语言变化，不刷新整个页面
+    document.documentElement.lang = newLocale;
   };
 
   if (!mounted) {
@@ -54,14 +60,22 @@ export function LanguageSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          onClick={() => switchLanguage('en')}
-          className={`cursor-pointer ${currentLanguage === 'en' ? 'bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground' : ''}`}
+          onClick={() => switchLanguage("en")}
+          className={`cursor-pointer ${
+            currentLanguage === "en"
+              ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground"
+              : ""
+          }`}
         >
           English
         </DropdownMenuItem>
         <DropdownMenuItem
-          onClick={() => switchLanguage('zh')}
-          className={`cursor-pointer ${currentLanguage === 'zh' ? 'bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground' : ''}`}
+          onClick={() => switchLanguage("zh")}
+          className={`cursor-pointer ${
+            currentLanguage === "zh"
+              ? "bg-primary/10 text-primary dark:bg-primary/20 dark:text-primary-foreground"
+              : ""
+          }`}
         >
           中文
         </DropdownMenuItem>
