@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import '@/utils/i18n/i18n'; // 导入i18n配置
 import { I18nextProvider } from 'react-i18next';
 import i18n from '@/utils/i18n/i18n';
 

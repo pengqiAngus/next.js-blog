@@ -1,6 +1,8 @@
 "use client";
+export const runtime = "edge";
 import React from "react";
 import Image from "next/image";
+import { FileCode, Github, Code2, BookOpenText, Workflow, Search, Server, Award, Users, Globe, User, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function FrontendInterviewHandbookPage() {
@@ -9,13 +11,7 @@ export default function FrontendInterviewHandbookPage() {
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8 flex justify-center">
-          <Image
-            src="/placeholder.svg"
-            alt="JavaScript Icon"
-            width={120}
-            height={120}
-            className="animate-bounce"
-          />
+          <FileCode className="w-[120px] h-[120px] animate-bounce text-pink-500" />
         </div>
         <h1 className="text-5xl font-bold mb-6 text-gray-900 dark:text-white">
           Front End Interview Handbook
@@ -39,12 +35,7 @@ export default function FrontendInterviewHandbookPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center"
           >
-            <Image
-              src="/placeholder.svg"
-              alt="GitHub Stars"
-              width={100}
-              height={20}
-            />
+            <Github className="w-[100px] h-[20px] text-gray-900 dark:text-white" />
           </a>
         </div>
       </div>
@@ -69,34 +60,19 @@ export default function FrontendInterviewHandbookPage() {
           <div className="grid grid-cols-3 gap-8 mt-12 max-w-3xl mx-auto">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <Image
-                  src="/placeholder.svg"
-                  alt="Solutions Icon"
-                  width={48}
-                  height={48}
-                />
+                <Code2 className="w-12 h-12 text-pink-500" />
               </div>
               <p>Well-explained solutions</p>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <Image
-                  src="/placeholder.svg"
-                  alt="Study Plans Icon"
-                  width={48}
-                  height={48}
-                />
+                <BookOpenText className="w-12 h-12 text-pink-500" />
               </div>
               <p>Step-by-step study plans</p>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <Image
-                  src="/placeholder.svg"
-                  alt="Process Icon"
-                  width={48}
-                  height={48}
-                />
+                <Workflow className="w-12 h-12 text-pink-500" />
               </div>
               <p>Structured 4-stage process</p>
             </div>
@@ -112,12 +88,7 @@ export default function FrontendInterviewHandbookPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Search Icon"
-                width={40}
-                height={40}
-              />
+              <Search className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">Front end interviews demystified</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -130,12 +101,7 @@ export default function FrontendInterviewHandbookPage() {
           </div>
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="System Icon"
-                width={40}
-                height={40}
-              />
+              <Server className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">System design</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -148,12 +114,7 @@ export default function FrontendInterviewHandbookPage() {
           </div>
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Code Icon"
-                width={40}
-                height={40}
-              />
+              <Code2 className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">Coding questions</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -166,12 +127,7 @@ export default function FrontendInterviewHandbookPage() {
           </div>
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Hero Icon"
-                width={40}
-                height={40}
-              />
+              <Award className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">From zero to hero</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -181,12 +137,7 @@ export default function FrontendInterviewHandbookPage() {
           </div>
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Basics Icon"
-                width={40}
-                height={40}
-              />
+              <BookOpenText className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">Back to basics</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -196,12 +147,7 @@ export default function FrontendInterviewHandbookPage() {
           </div>
           <div>
             <div className="mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Community Icon"
-                width={40}
-                height={40}
-              />
+              <Users className="w-10 h-10 text-pink-500" />
             </div>
             <h3 className="text-xl font-bold mb-4">Community effort</h3>
             <p className="text-gray-600 dark:text-gray-300 text-justify">
@@ -222,13 +168,7 @@ export default function FrontendInterviewHandbookPage() {
           {/* For now using placeholder cards */}
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="CSS-Tricks Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <Code2 className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">CSS-Tricks</h4>
                 <p className="text-gray-500 dark:text-gray-400">@css · Feb 14, 2018</p>
@@ -243,13 +183,7 @@ export default function FrontendInterviewHandbookPage() {
 
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Frontend Daily Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <Globe className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Frontend Daily</h4>
                 <p className="text-gray-500 dark:text-gray-400">@FrontendDaily · Apr 10, 2018</p>
@@ -262,13 +196,7 @@ export default function FrontendInterviewHandbookPage() {
 
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Code with Kenny Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <Code2 className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Code with Kenny</h4>
                 <p className="text-gray-500 dark:text-gray-400">@CodeWithKenny · Nov 11, 2020</p>
@@ -281,13 +209,7 @@ export default function FrontendInterviewHandbookPage() {
 
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="DeeDee Walsh Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">DeeDee Walsh</h4>
                 <p className="text-gray-500 dark:text-gray-400">@ddskier · Jul 26, 2020</p>
@@ -300,13 +222,7 @@ export default function FrontendInterviewHandbookPage() {
 
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Jacob Jed Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Jacob Jed</h4>
                 <p className="text-gray-500 dark:text-gray-400">@realJacobJed · Mar 3, 2018</p>
@@ -319,13 +235,7 @@ export default function FrontendInterviewHandbookPage() {
 
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md border border-gray-200 dark:border-gray-700">
             <div className="flex items-center mb-4">
-              <Image
-                src="/placeholder.svg"
-                alt="Matija Marohnić Avatar"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Matija Marohnić</h4>
                 <p className="text-gray-500 dark:text-gray-400">@silvenon · Jul 20, 2020</p>
@@ -349,13 +259,7 @@ export default function FrontendInterviewHandbookPage() {
               "Preparing for my first rounds of tech interviews was really daunting - I wasn't sure what to expect and where to start. This handbook together with the Tech Interview Handbook was a great starting point for me. It clearly describes each part of the process and has tons of awesome tips and resources. With this handbook and lots of practice, I managed to get offers from Facebook, Dropbox and Amazon!"
             </p>
             <div className="flex items-center">
-              <Image
-                src="/placeholder.svg"
-                alt="Erin Teo"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Erin Teo</h4>
                 <p className="text-gray-500 dark:text-gray-400">Senior Front End Engineer, Facebook</p>
@@ -370,13 +274,7 @@ export default function FrontendInterviewHandbookPage() {
               I've learnt a few things and blogged about them on https://zhenghao.io, check them out if you're interested!"
             </p>
             <div className="flex items-center">
-              <Image
-                src="/placeholder.svg"
-                alt="Zhenghao He"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Zhenghao He</h4>
                 <p className="text-gray-500 dark:text-gray-400">Engineering Manager at Robinhood, ex-Amazon</p>
@@ -389,13 +287,7 @@ export default function FrontendInterviewHandbookPage() {
               "Before discovering the handbook, I didn't know what to expect for my front end interviews. Thanks to it, I had a better understanding and even learned new things about frontend development. The handbook is an immense resource, one that I still use to refresh and reinforce my knowledge to tackle interviews confidently!"
             </p>
             <div className="flex items-center">
-              <Image
-                src="/placeholder.svg"
-                alt="Kai Li"
-                width={48}
-                height={48}
-                className="rounded-full"
-              />
+              <User className="w-12 h-12 text-pink-500 rounded-full" />
               <div className="ml-4">
                 <h4 className="font-bold dark:text-white">Kai Li</h4>
                 <p className="text-gray-500 dark:text-gray-400">Software Engineer, Stripe, ex-Quora, ex-Zendesk</p>
@@ -422,20 +314,8 @@ export default function FrontendInterviewHandbookPage() {
           Support this project by becoming a sponsor! Your logo/profile picture will show up here with a link to your website.
         </p>
         <div className="flex justify-center gap-8 mb-8">
-          <Image
-            src="/placeholder.svg"
-            alt="Sponsor Logo"
-            width={120}
-            height={120}
-            className="rounded-lg"
-          />
-          <Image
-            src="/placeholder.svg"
-            alt="Sponsor Logo"
-            width={120}
-            height={120}
-            className="rounded-lg"
-          />
+          <Heart className="w-[120px] h-[120px] text-pink-500 rounded-lg" />
+          <Heart className="w-[120px] h-[120px] text-pink-500 rounded-lg" />
         </div>
         <Button
           className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full text-lg font-medium"

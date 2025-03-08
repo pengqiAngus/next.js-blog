@@ -1,16 +1,12 @@
 "use client"
 
 import * as React from "react"
-import { Globe } from "lucide-react"
+import {  Languages } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/navigation";
 
-const languageNames = {
-  en: 'English',
-  zh: '中文',
-};
 
 export function LanguageSelector() {
   const { i18n } = useTranslation();
@@ -45,33 +41,35 @@ export function LanguageSelector() {
 
   // 如果组件未挂载，不渲染任何内容，避免hydration错误
   if (!mounted) {
-    return <Button variant="ghost" size="icon">
-      <Globe className="h-[1.2rem] w-[1.2rem]" />
-    </Button>;
+    return (
+      <Button variant="ghost" size="icon">
+        <Languages className="h-[1.2rem] w-[1.2rem]" />
+      </Button>
+    );
   }
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Globe className="h-[1.2rem] w-[1.2rem]" />
+          <Languages className="h-[1.2rem] w-[1.2rem]" />
           <span className="sr-only">切换语言</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => changeLanguage("en")}
-          className={i18n.language === "en" ? "bg-accent" : ""}
+          className={i18n.language === "en" ? "bg-purple-600" : ""}
         >
           English
         </DropdownMenuItem>
-        <DropdownMenuItem 
+        <DropdownMenuItem
           onClick={() => changeLanguage("zh")}
-          className={i18n.language === "zh" ? "bg-accent" : ""}
+          className={i18n.language === "zh" ? "bg-purple-600" : ""}
         >
           中文
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }

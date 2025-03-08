@@ -1,4 +1,5 @@
 // import { Inter } from "next/font/google"
+export const runtime = "edge";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";

@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import { AnnouncementBanner } from "@/components/layout/AnnouncementBanner";
 import { HeroSection } from "@/components/home/HeroSection";
 import { ContentSection } from "@/components/home/ContentSection";

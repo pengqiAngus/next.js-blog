@@ -62,6 +62,12 @@ export function SiteHeader() {
                   <NavbarMenu.HoveredLink href="/tool/excalidraw">
                     {t("header.excalidraw")}
                   </NavbarMenu.HoveredLink>
+                  <NavbarMenu.HoveredLink href="/tool/handbook">
+                    Handbook
+                  </NavbarMenu.HoveredLink>
+                  <NavbarMenu.HoveredLink href="/tool/midscene">
+                    Midscene
+                  </NavbarMenu.HoveredLink>
                 </div>
               </NavbarMenu.MenuItem>
             </NavbarMenu.Menu>

@@ -1,3 +1,4 @@
+'use client'
 export const runtime = "edge";
 export const nodejs = true;
 import { BlogHeader } from "@/components/blog-detail/blog-header";

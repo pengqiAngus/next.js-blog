@@ -147,6 +147,12 @@ code:not(.highlight code):not(.js-code-highlight code):not(pre code):not(div[cla
   background-color: #2d2d2d;
 }
 
+div, span , p{
+    &:focus-visible{
+        border: none;
+    }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
