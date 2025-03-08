@@ -1,3 +1,4 @@
+export const runtime = "edge";
 // app/api/translate/route.js
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
@@ -6,7 +7,7 @@ const openai = new OpenAI({
   apiKey: "sk-f87da340ec17463fb23e0cdd39115579",
 });
 export async function POST(req) {
-    try {
+  try {
     const { content } = await req.json();
     if (!content) {
       return NextResponse.json(
@@ -20,14 +21,11 @@ export async function POST(req) {
       messages: [
         {
           role: "system",
-          content:
-             `Please identify all proprietary terms (like product names, technologies, frameworks, libraries) in the following HTML content. Return a JSON array of the identified terms. Only return the JSON array, no other text:\n\n${content}`
+          content: `Please identify all proprietary terms (like product names, technologies, frameworks, libraries) in the following HTML content. Return a JSON array of the identified terms. Only return the JSON array, no other text:\n\n${content}`,
         },
-
       ],
       model: "qwen-plus",
     });
-
 
     return NextResponse.json({
       data: data.choices[0].message.content,
