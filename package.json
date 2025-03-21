@@ -9,8 +9,8 @@
     "lint": "next lint",
     "build:worker": "opennextjs-cloudflare",
     "dev:worker": "wrangler dev --port 8771",
-    "preview:worker": "pnpm  build:worker && pnpm dev:worker",
-    "deploy:worker": "pnpm  build:worker && wrangler deploy"
+    "preview:worker": "yarn  build:worker && yarn dev:worker",
+    "deploy:worker": "yarn  build:worker && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
