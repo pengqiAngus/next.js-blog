@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { I18nProvider } from "@/components/common/I18nProvider";
 import { ScrollToTop } from "@/components/common/ScrollToTop";
 import "./globals.css";
+import { Metadata } from "next";
 
 // 不在服务器组件中导入客户端i18n
 // import '@/utils/i18n/i18n';
@@ -14,6 +15,72 @@ import "./globals.css";
 
 // 默认语言
 const defaultLocale = 'en';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Next.js Blog - A Modern Blog Platform',
+    template: '%s | Next.js Blog'
+  },
+  description: 'A modern blog platform built with Next.js, featuring beautiful UI, dark mode, and internationalization support.',
+  keywords: ['blog', 'next.js', 'react', 'typescript', 'tailwindcss'],
+  authors: [{ name: 'Your Name' }],
+  creator: 'Your Name',
+  publisher: 'Your Name',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.json',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://your-domain.com',
+    title: 'Next.js Blog',
+    description: 'A modern blog platform built with Next.js',
+    siteName: 'Next.js Blog',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Next.js Blog',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Next.js Blog',
+    description: 'A modern blog platform built with Next.js',
+    images: ['/og-image.jpg'],
+    creator: '@yourtwitter',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-site-verification',
+  },
+};
 
 export default function RootLayout({
   children,
