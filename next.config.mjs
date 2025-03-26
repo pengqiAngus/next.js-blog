@@ -19,11 +19,13 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   webpack: (config, { dev, isServer }) => {
-    config.plugins.push(
-      codeInspectorPlugin({
-        bundler: "webpack",
-      })
-    );
+    if (dev) {
+      config.plugins.push(
+        codeInspectorPlugin({
+          bundler: "webpack",
+        })
+      );
+    }
 
     // 只在生产环境和非服务器端添加 Workbox 插件
     if (!dev && !isServer) {

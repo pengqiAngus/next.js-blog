@@ -4,3 +4,4 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://your-domain.com/sitemap.xml 
+# Algolia-Crawler-Verif: EF11467FB236C6CB
