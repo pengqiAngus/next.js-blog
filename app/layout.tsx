@@ -18,8 +18,8 @@ const defaultLocale = 'en';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Next.js Blog - A Modern Blog Platform',
-    template: '%s | Next.js Blog'
+    default: 'awesome-blog',
+    template: '%s | awesome-blog'
   },
   description: 'A modern blog platform built with Next.js, featuring beautiful UI, dark mode, and internationalization support.',
   keywords: ['blog', 'next.js', 'react', 'typescript', 'tailwindcss'],
@@ -45,21 +45,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://your-domain.com',
-    title: 'Next.js Blog',
+    title: 'awesome-blog',
     description: 'A modern blog platform built with Next.js',
-    siteName: 'Next.js Blog',
+    siteName: 'awesome-blog',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Next.js Blog',
+        alt: 'awesome-blog',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js Blog',
+    title: 'awesome-blog',
     description: 'A modern blog platform built with Next.js',
     images: ['/og-image.jpg'],
     creator: '@yourtwitter',
@@ -94,6 +94,11 @@ export default function RootLayout({
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js" /> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* 启用 back/forward cache */}
+        <meta name="turbolinks-cache-control" content="no-cache" />
+        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Expires" content="0" />
         <script src="/sw.js" defer></script>
       </head>
       <body className="bg-background text-foreground">
