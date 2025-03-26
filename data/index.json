@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "adaptive-ui-in-react-constructing-self-configuring-and-context-aware-components-1e7n",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsstlqmn41ro9i6tksp9j.png",
+    "type": "blog",
+    "title": "Adaptive UI in React: Constructing Self-Configuring and Context-Aware Components",
+    "description": "Learn how to build adaptive, self-configuring React components that respond to user behavior, device constraints, and context for an enhanced user experience."
+  },
+  {
+    "slug": "nextjs-can-we-make-an-intercepting-route-behave-like-isr-3e35",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh71gdxju441ph52aevjf.png",
+    "type": "blog",
+    "title": "Next.js — Can we make an Intercepting Route behave like ISR?",
+    "description": "Explore whether Next.js Intercepting Routes can mimic Incremental Static Regeneration (ISR) behavior using caching strategies."
+  },
+  {
+    "slug": "using-emotion-in-a-new-project-component-inheritance-vs-single-styled-component-with-props-2o1l",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F3da5pmwrzy4ocofgxv7j.png",
+    "type": "blog",
+    "title": "Using Emotion in a New Project: Component Inheritance vs. Single Styled Component with Props",
+    "description": "A comparison of using Emotion for shared React components via inheritance versus props-based styling, highlighting a focus-related bug and recommendations."
+  },
+  {
+    "slug": "why-zustand-state-reset-works-instantly-but-react-query-cache-clearing-can-be-tricky",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fojqu2h3w8rtl3cl3lsdx.png",
+    "type": "blog",
+    "title": "Why Zustand State Reset Works Instantly, But React Query Cache Clearing Can Be Tricky",
+    "description": "Exploring the differences between Zustand state management and React Query cache clearing in React applications"
+  },
+  {
+    "slug": "optimizing-react-native-for-enterprise-the-definitive-guide",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F1eunpg0fu0meoh02klv8.png",
+    "type": "blog",
+    "title": "Optimizing React Native for Enterprise: The Definitive Guide",
+    "description": "Strategies and best practices for optimizing enterprise-scale React Native applications"
+  },
+  {
+    "slug": "top-10-generative-ai-blogs-articles-or-tutorials-in-2024",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fucta3lwkzx91blw2mkb0.jpg",
+    "type": "blog",
+    "title": "Top 10 generative AI blogs, articles, or tutorials in 2024",
+    "description": "Discover the most popular content for 2024's hottest topic: generative AI, from innovative tutorials to comprehensive articles."
+  },
+  {
+    "slug": "non-human-identity-security-in-the-age-of-ai-5dh5",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftyfbz1qoojksqanq24kh.png",
+    "type": "blog",
+    "title": "Non-Human Identity Security in the Age of AI",
+    "description": "Exploring the security challenges and risks of non-human identities (NHIs) in an AI-driven enterprise environment."
+  },
+  {
+    "slug": "aifacialemotion-a-net-library-for-facial-emotion-analysis-4pe",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc6kysmfs3ruh1wqojld3.png",
+    "type": "blog",
+    "title": "�� AI.Facial.Emotion – A .NET Library for Facial Emotion Analysis",
+    "description": "A lightweight and powerful .NET library that can analyze facial emotions, age, and gender in real-time, suitable for various scenarios such as chatbots, customer analytics, security systems, or healthcare applications."
+  },
+  {
+    "slug": "google-geminis-ai-coding-tool-is-now-free-for-everyone-47fg",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9fum0ftsdfecp47zbtps.jpg",
+    "type": "blog",
+    "title": "Google Gemini's AI Coding Tool is Now Free for Everyone",
+    "description": "75% of developers use AI daily, and 25% of Google's new code is AI-generated. AI is making coding faster and easier for everyone."
+  },
+  {
+    "slug": "how-developers-are-using-kaibanjs-20-real-world-ai-use-cases-5hni",
+    "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F10132%2F092732dc-dcf9-4c10-b260-b0f1005304d2.png",
+    "type": "blog",
+    "title": "How Developers Are Using KaibanJS: 20+ Real-World AI Use Cases",
+    "description": "Explore over 20 innovative real-world use cases of KaibanJS, a multi-agent AI framework transforming industries from healthcare to software development."
+  },
+  {
+    "slug": "/excalidraw",
+    "image": "https://plus.excalidraw.com/twitter_card.png?v1",
+    "type": "tool",
+    "title": "Excalidraw",
+    "description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them"
+  },
+  {
+    "slug": "/handbook",
+    "type": "tool",
+    "image": "https://www.frontendinterviewhandbook.com/img/logo.svg",
+    "title": "Handbook",
+    "description": "Front end interview preparation resources for busy engineers – quiz questions, JavaScript coding questions, algorithms questions, front end system design questions and more"
+  },
+  {
+    "slug": "/midscene",
+    "type": "tool",
+    "image": "https://th.bing.com/th/id/OIP.lDV4Rx2nY6NYEWClNT8xJwHaDD?rs=1&pid=ImgDetMain",
+    "title": "Midscene",
+    "description": "Midscene.js provides a Chrome extension. By using it, you can quickly experience the main features of Midscene on any webpage, without needing to set up a code project."
+  }
+]

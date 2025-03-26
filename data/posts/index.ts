@@ -10,7 +10,13 @@ export interface Post {
   content: string;
   author: string;
 }
-
+export interface AlgoliaPost {
+  slug: string;
+  image: string;
+  type: string;
+  title: string;
+  description: string;
+}
 import reactPost from "./react";
 import aiPost from "./ai";
 import productivityPost from "./productivity";

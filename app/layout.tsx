@@ -17,6 +17,7 @@ import { Metadata } from "next";
 const defaultLocale = 'en';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://your-domain.com'),
   title: {
     default: 'awesome-blog',
     template: '%s | awesome-blog'
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
+    url: 'https://awesome-blog.site',
     title: 'awesome-blog',
     description: 'A modern blog platform built with Next.js',
     siteName: 'awesome-blog',

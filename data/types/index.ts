@@ -6,6 +6,3 @@ export const blogTypes = [
 //   { slug: "user-experience", name: "User Experience" },
 //   { slug: "productivity", name: "Productivity" },
 ];
-
-
-
