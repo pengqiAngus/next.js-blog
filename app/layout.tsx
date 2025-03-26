@@ -27,6 +27,7 @@ export default function RootLayout({
         {/* <script src="https://unpkg.com/react-scan/dist/auto.global.js" /> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="/sw.js" defer></script>
       </head>
       <body className="bg-background text-foreground">
           <ThemeProvider
