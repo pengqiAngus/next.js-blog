@@ -97,27 +97,34 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* 启用 back/forward cache */}
         <meta name="turbolinks-cache-control" content="no-cache" />
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta
+          httpEquiv="Cache-Control"
+          content="no-cache, no-store, must-revalidate"
+        />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
         <script src="/sw.js" defer></script>
+        <link
+          rel="stylesheet"
+          href="https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.css"
+        />
       </head>
       <body className="bg-background text-foreground">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <I18nProvider>
-              <div className="flex min-h-screen flex-col">
-                <ScrollToTop />
-                <SiteHeader />
-                <main className="flex-1">{children}</main>
-                <SiteFooter />
-              </div>
-            </I18nProvider>
-          </ThemeProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <I18nProvider>
+            <div className="flex min-h-screen flex-col">
+              <ScrollToTop />
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </div>
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

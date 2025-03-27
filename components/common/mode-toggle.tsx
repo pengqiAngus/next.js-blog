@@ -11,7 +11,7 @@ import { themeState, type themeStateType } from "@/utils/jotail";
 export function ModeToggle() {
     const { theme, setTheme } = useTheme();
       const [, setThemeState] = useAtom(themeState);
-
+ setThemeState(theme as themeStateType);
     const setThemeMode = (mode: themeStateType) => {
         setThemeState(mode);
         setTheme(mode);
