@@ -38,7 +38,9 @@
     "aiDescription": "Articles about artificial intelligence and machine learning",
     "moreDescription": "find out more",
     "tools": "Tools",
-    "excalidraw": "Excalidraw"
+    "excalidraw": "Excalidraw",
+    "search": "Search",
+    "searchPlaceholder": "Search for articles, tools, and more"
   },
   "trending": {
     "readMore": "Read more",

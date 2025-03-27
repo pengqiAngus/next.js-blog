@@ -37,7 +37,9 @@
     "aiDescription": "关于人工智能和机器学习的文章",
     "moreDescription": "了解更多",
     "tools": "工具",
-    "excalidraw": "Excalidraw"
+    "excalidraw": "Excalidraw",
+    "search": "搜索",
+    "searchPlaceholder": "搜索文章、工具和更多内容"
   },
   "trending": {
     "readMore": "阅读更多",
